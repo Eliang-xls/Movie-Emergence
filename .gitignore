@@ -1,0 +1,22 @@
+# IDE / Editor
+.codebuddy/
+.mimocode/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+.venv/
+venv/
+
+# Large files (keep as reference but don't version)
+*.docx
