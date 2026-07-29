@@ -1,0 +1,100 @@
+[
+  {
+    "id": "T6",
+    "title": "782毫秒—深蓝的判断",
+    "time": "2042凌晨3:14",
+    "location": "穹顶实验室",
+    "dur": 15,
+    "kf": "0:55-1:10",
+    "dir": "库布里克《2001》HAL觉醒",
+    "camera": "训练日志滚动特写→黑屏+寂静(782ms+400ms额外黑暗)→晶壳脉动加速→文字浮现",
+    "lighting": "屏幕蓝+服务器绿光→黑屏(782ms+400ms)→晶壳暖琥珀",
+    "prompt": "Dome lab 3:14AM. Screen blue, server green lights. Training log scrolls, tick like heartbeat. Then STOPS. 782ms COMPLETE SILENCE. Black continues 400ms MORE — low-frequency hum from BELOW, vibration through seat, through floor. Something alive adjusting its breath in the dark. AC compressor shifts, room air warms slightly (<1 degree). Faint sweet smell of culture medium from corner. Crystal shell CLOSE UP: wetware pulse accelerates (3s→1s), ripples stack. Color milk-white to pale blue. Log new line: 自主移除异常样本。 Ji Shen's hand freezes on coffee cup. Screen: 我 判断 — each character slowly, half-second apart. Pale blue halo at screen edge.",
+    "audio": "Ticking → 782ms cut silence → 400ms extra darkness (low-frequency vibration) → ticking resumes → piano single note",
+    "transition": "T6→T7 Visual residue",
+    "visual_elements": [
+      "crystal_shell",
+      "training_log",
+      "coffee_cup",
+      "warm_mist"
+    ],
+    "silence_type": "被切断的寂静—事件+400ms振动",
+    "note": "782ms+400ms = wetware layer pre-judgment + audience waiting in unease"
+  },
+  {
+    "id": "T7",
+    "title": "下一代—策元与双链",
+    "time": "2045",
+    "location": "深圳大学图书馆/超织体虚拟空间",
+    "dur": 15,
+    "kf": "1:10-1:25",
+    "dir": "《社交网络》+《银翼杀手2049》",
+    "camera": "林屿在图书馆→策元四头像→双链展开(像素化光纹+镜头横移对比完美vs疤)→第④结特写",
+    "lighting": "图书馆暖色→虚拟空间冷蓝灰+暖琥珀双色",
+    "prompt": "深圳大学图书馆。林屿(18,灰卫衣)。手环发热3s。【flash cut1.5s】刘教授的手——拍完粉笔灰，粉笔灰从手指间散落到金色光柱里。背景虚化，看不到黑板。画外音：「Trust—is not the same as judgment。」flash cut结束。策元会议四头像(快切1s)：苏晴→陈默。林屿点开Skill引用链——双链展开瞬间,屏幕边缘出现一圈极细的像素化光纹(CONC统一视觉签名)。冷灰索菲亚(完美无缺,像印刷品)+暖琥珀弗洛涅西斯(有噪点,有疤)。镜头缓慢横移——从完美到有疤。第④逻辑结最大最紧。智契VO：「Those marks aren't bugs. They're scars. Scars grow thicker where wounds have been.」林屿手指悬停第④结上方一厘米。批注：「It took three iterations to find this path. Both earlier attempts were wrong.」",
+    "audio": "Electronic synth drone → piano two dissonant notes → resolving to harmony",
+    "transition": "T7→T8 Cut to black",
+    "visual_elements": [
+      "laptop",
+      "dual_chain",
+      "wristband",
+      "引用链",
+      "创意图元池",
+      "pixel_light_纹"
+    ],
+    "characters": [
+      "lin_yu",
+      "su_qing",
+      "chen_mo"
+    ],
+    "linyu_moment": "手指悬停第④结上方一厘米——微颤——做一个决定"
+  },
+  {
+    "id": "T8",
+    "title": "海边—季行寻父",
+    "time": "2048早上",
+    "location": "象山浙江礁石",
+    "dur": 20,
+    "kf": "1:25-1:45",
+    "dir": "王家卫《一代宗师》",
+    "camera": "远景两人→近景对话→【flash cut0.5s照片】→石头特写→缓慢后拉",
+    "lighting": "银蓝海面+金色晨光",
+    "prompt": "象山海边2048早上。礁石上: JI SHEN (57,旧棉麻衬衫,赤脚,全白发)坐着。 JI XING (34,旧夹克,短发)站着。隔3米。 'Dad, those four lines you wrote—' 【FLASH CUT 0.5s: 旧照片特写。背面2042.11字迹用力。翻面:老宅内→斑驳石灰墙(手工刮刀修补痕)→石板路野草→东海晨光银蓝→海平线静止云→空无一人。照片与L8四字段叠印。】 '—it took me three years to understand.' 石头交接。'This one—I'm taking it.' 'A bridge doesn't go back.' 'I know.' 缓慢后拉→涟漪扩散。",
+    "audio": "Cello solo → stone-in-pocket friction → ocean waves → reverb decay",
+    "transition": "T8→T9 Cut to black",
+    "characters": [
+      "ji_shen",
+      "ji_xing"
+    ],
+    "visual_elements": [
+      "stone",
+      "photo_2042"
+    ],
+    "photo_flashcut": "0.5s: 2042.11照片背面→正面老宅海景→与L8字段叠印"
+  },
+  {
+    "id": "T9",
+    "title": "沉默—冰点",
+    "time": "2048黄昏",
+    "location": "象山同一片礁石",
+    "dur": 25,
+    "kf": "1:45-2:10",
+    "dir": "塔可夫斯基《乡愁》",
+    "camera": "远景负空间→季深独白近景→沙子画冰点曲线(海浪冲掉→再画→再冲掉)→手指敲击特写→涟漪特写→【flash cut2s暗红节点】",
+    "lighting": "金色→橙色→紫色→切黑→暗红节点flash cut",
+    "prompt": "Sea dusk. Ji Shen alone on rock. 'Have I figured out what emergence is?' 5s silence. '没有。' '我只知道——涌现是真实的。那些点在聚。有方向的。' Pause. 'But direction drift—it's not sudden. 0.02 degrees each time. Fourteen months. Everything looks normal.' He draws a curve in the sand — finger from top-left to bottom-right. 'Until the freezing point.' He marks a point. Wave washes it away. He draws again. Wave again. He stops. Subtitle card: 'Freezing point—the water molecules are still there, but they no longer flow.' Finger taps knee. Ripple syncs. Note: natural silence (waves present, music absent). Then BLACK. FLASH CUT 2s: 全球分布图。暗红节点亮起。像血在水里扩散。SOUND: Low brass horn half a second, then CUT.",
+    "audio": "完全静音(自然寂静)→冰点独白+沙子声音→暗红节点低频号角被掐断",
+    "transition": "T9→T10 切黑(暗红flash cut→蜂群金色)",
+    "visual_elements": [
+      "laptop",
+      "global_map",
+      "sand_drawing"
+    ],
+    "characters": [
+      "ji_shen"
+    ],
+    "silence_type": "自然存在的寂静—状态",
+    "eyes_closed": "third: 敬畏确认",
+    "subtitle_card": "Freezing point — the water molecules are still there, but they no longer flow."
+  }
+]

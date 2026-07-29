@@ -1,0 +1,162 @@
+{
+  "version": "2.0",
+  "project": "EMERGENCE — Movie Trailer (English Version)",
+  "generated_at": "2026-07-28",
+  "source_storyboard": "Storyboard Script v2.0 (English Version)",
+  "source_element_design": "Element Design v2.0 (English Version)",
+  "total_scenes": 12,
+  "total_duration_sec": 296,
+  "fps": 24,
+  "resolution": "3840x1608",
+  "aspect_ratio": "2.39:1",
+  "file_manifest": {
+    "flow_manifest.json": "全局元数据:角色12/物件12/色调7色/音乐主题7/视觉母题5/特殊过渡6/字幕卡4",
+    "flow_scenes_T1_T5.json": "T1温度感先于视觉→T5海边(含T2英文白板+光柱+嗒+本原零+T5旁白字幕)",
+    "flow_scenes_T6_T10.json": "T6 782ms+400ms→T9冰点沙子画曲线+海浪冲掉+暗红闪切(含T7 Sophia/Phronesis VO+T10金暗双色+旁白字幕)",
+    "flow_scenes_T11_T12.json": "T10蜂群→T12终幕(含T11晶壳金色透灰+T12终幕签名+余韵黑屏5s)",
+    "element_map.json": "元素设计对位表(全量同步v2.0)",
+    "flow.lock": "本文件:锁定版本+校验"
+  },
+  "scene_sequence": [
+    {
+      "id": "T1",
+      "title": "钩子—晶壳",
+      "start": "0:00",
+      "dur": 12,
+      "end": "0:12"
+    },
+    {
+      "id": "T2",
+      "title": "白板—穹顶的诞生",
+      "start": "0:12",
+      "dur": 13,
+      "end": "0:25"
+    },
+    {
+      "id": "T3",
+      "title": "夜晚—季深的公寓",
+      "start": "0:25",
+      "dur": 10,
+      "end": "0:35"
+    },
+    {
+      "id": "T4",
+      "title": "涌现—彩色的点在聚",
+      "start": "0:35",
+      "dur": 7,
+      "end": "0:42"
+    },
+    {
+      "id": "T5",
+      "title": "海边—退潮",
+      "start": "0:42",
+      "dur": 13,
+      "end": "0:55"
+    },
+    {
+      "id": "T6",
+      "title": "782毫秒—深蓝的判断",
+      "start": "0:55",
+      "dur": 15,
+      "end": "1:10"
+    },
+    {
+      "id": "T7",
+      "title": "下一代—策元与双链",
+      "start": "1:10",
+      "dur": 15,
+      "end": "1:25"
+    },
+    {
+      "id": "T8",
+      "title": "海边—季行寻父",
+      "start": "1:25",
+      "dur": 20,
+      "end": "1:45"
+    },
+    {
+      "id": "T9",
+      "title": "沉默—冰点",
+      "start": "1:45",
+      "dur": 25,
+      "end": "2:10"
+    },
+    {
+      "id": "T10",
+      "title": "蜂群—金色蔓延",
+      "start": "2:10",
+      "dur": 25,
+      "end": "2:35"
+    },
+    {
+      "id": "T11",
+      "title": "高潮—唤醒",
+      "start": "2:35",
+      "dur": 30,
+      "end": "3:05"
+    },
+    {
+      "id": "T12",
+      "title": "终幕—一下",
+      "start": "3:05",
+      "dur": 25,
+      "end": "3:30"
+    },
+    {
+      "id": "余韵黑屏",
+      "title": "余韵·黑屏5s",
+      "start": "3:30",
+      "dur": 15,
+      "end": "3:45"
+    }
+  ],
+  "special_transitions": [
+    {
+      "from": "T2",
+      "to": "T3",
+      "type": "光线渐变",
+      "detail": "关灯→暖黄光收缩→窗外冷蓝月光漫入"
+    },
+    {
+      "from": "T4",
+      "to": "T5",
+      "type": "声音先行",
+      "detail": "切黑后先听到海浪声0.5s→画面亮起"
+    },
+    {
+      "from": "T6",
+      "to": "T7",
+      "type": "视觉残留+闪切",
+      "detail": "淡蓝光晕→金色光柱粉笔灰(刘教授闪切)→图书馆"
+    },
+    {
+      "from": "T9",
+      "to": "T10",
+      "type": "切黑→暗红闪切→金色",
+      "detail": "冰点独白后黑屏→暗红2s→蜂群金色"
+    },
+    {
+      "from": "T10",
+      "to": "T11",
+      "type": "色彩溶解",
+      "detail": "金色光点不切黑→溶解成T11晶壳金色"
+    }
+  ],
+  "color_palette": {
+    "silicon_protocol": "#4A6B8A 冷蓝灰",
+    "wetware_life": "#C49A6C 暖琥珀",
+    "hive_awakening": "#D4A84B 金色",
+    "sea_ripple": "#E8DFC8 暖白",
+    "night_moon": "#B8C4D4 银蓝",
+    "dawn_light": "#F0E6D0 淡金",
+    "demon_node": "#8B2D2D 暗红"
+  },
+  "v2_0_updates": [
+    "T1:起雾停留1秒,让观众在模糊中不安",
+    "T2:白板特写0.5秒,先看到光柱分割再看到字",
+    "T7:策元会议仅保留苏晴+陈默(方向+问题),删季行+林屿台词",
+    "T9:独白后留1秒沉默,让观众从听懂过渡到看到",
+    "T10:旁白字幕提前到像素云凝固前(免疫系统在凝固之前出现)",
+    "T11:深蓝独白拆为三段,石头三段穿插(深蓝→石头1→深蓝→石头2→金色→深蓝→石头3)"
+  ]
+}

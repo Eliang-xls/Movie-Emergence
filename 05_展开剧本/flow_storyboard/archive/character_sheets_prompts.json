@@ -1,0 +1,76 @@
+{
+  "purpose": "Nano Banana (Gemini Image) 角色参考图生成提示词。用于在Flow中创建角色一致性参考。",
+  "instructions": "先逐条生成所有角色参考图，再开始Veo场景生成。每个角色生成3张不同角度的参考图（正面/侧面/45度），确保面容/服装/气质一致。",
+  "characters": [
+    {
+      "id": "ji_shen_2027",
+      "name": "季深（创业期39岁）",
+      "prompt": "Chinese man, 39 years old, from Ningbo China. MIT PhD. Disheveled black hair, forgets to comb it. Worn gray T-shirt with deformed collar, old jeans, worn sneakers. Lean build, tired but focused eyes. Stands in front of a whiteboard in California sunlight. 3/4 portrait, shot on 35mm film, natural window light, warm California morning. Cinematic, photorealistic, no smile, just quiet intensity. Portrait, front view."
+    },
+    {
+      "id": "ji_shen_2029",
+      "name": "季深（Jackie死后41岁）",
+      "same_as_ji_shen_2027_but": "Older, darker circles under eyes, starting to get gray hair. Emptier gaze. Same gray T-shirt but more wrinkled, like worn for days. Sitting on a beach at dusk, sand between toes, looking at the ocean. 3/4 profile, golden hour light."
+    },
+    {
+      "id": "ji_shen_2042",
+      "name": "季深（深蓝觉醒54岁）",
+      "same_as_ji_shen_2027_but": "Older, 54 years old. Gray-streaked hair, cut shorter. Deeper wrinkles, weary eyes — not sad, but carrying weight. Dark gray hoodie, old jeans. Hand frozen over a coffee cup. Sitting in a dim lab at 3:14 AM, green server LED lights and blue screen glow. Expression: not surprise, not fear — a calm 'finally it has arrived' stillness. 3/4 portrait, cool blue-green ambient light, cinematic."
+    },
+    {
+      "id": "ji_shen_2048",
+      "name": "季深（终章61岁）",
+      "same_as_ji_shen_2027_but": "Completely white short hair, deep wrinkles, age spots on hands. Slightly stooped, thin. Wearing old linen shirt, beige, loose, blowing in sea wind. Sitting on a rock by the sea at dawn. Eyes still have direction — same as 20 years ago. Front portrait, soft morning light, cinematic."
+    },
+    {
+      "id": "jiang_yuan",
+      "name": "江远42岁",
+      "prompt": "Chinese man, 42 years old, from Fuzhou, Stanford MBA. Clean cut short hair, dark blue dress shirt buttoned to top, polished leather shoes — rare in Silicon Valley. Energetic, fast talker, always scanning the room. Stands in front of a whiteboard, holding a marker, pen cap already off. Business casual, sharp, confident. 3/4 portrait, office lighting, natural light from blinds."
+    },
+    {
+      "id": "gu_qing",
+      "name": "顾清35岁",
+      "prompt": "Chinese woman, 35 years old, grew up in Scotland, PhD in philosophy. Mid-length wavy dark brown hair, often blown across face by wind. Cream-white soft cardigan, loose straight pants, flat shoes. No jewelry, no makeup — natural to the point of not looking in a mirror. Peaceful, clear eyes. Sitting on a beach at dusk next to a man, half a meter apart. 3/4 profile, golden hour light, warm. Cinematic."
+    },
+    {
+      "id": "lin_yu",
+      "name": "林屿18岁",
+      "prompt": "Chinese teenager, 18 years old. Short messy hair, gray hoodie, jeans, sneakers. Freshman college student look. Quiet observer — eyes always moving, watching, remembering, thinking. Wearing a silver-gray minimalist wristband (CONC device). Sitting in a university library corner in autumn, laptop open, outside window people running on track. Natural light, warm tones. 3/4 portrait, cinematic, photorealistic."
+    },
+    {
+      "id": "ji_xing",
+      "name": "季行34岁",
+      "prompt": "Chinese man, 34 years old, deep-set eyes, hard facial lines, looks like a younger Ji Shen but more silent. Short hair, old jacket, jeans. Has traveled a long distance. Stands on a seaside rock, three meters from an older man. Face: controlled emotion, not cold — restrained. Morning light, silver-blue sea, gold dawn. 3/4 portrait, cinematic, 35mm film grain."
+    },
+    {
+      "id": "ji_yao",
+      "name": "季遥19岁",
+      "prompt": "Chinese young woman, 19 years old, shoulder-length hair. Eyes like her father — have direction. Wearing old hoodie with sleeves too long, jeans, barefoot. Sitting on a seaside rock at dawn, next to an old man. A stone in her hand, warm from her body. Rising sun light, pale gold. 3/4 portrait, soft, warm, cinematic."
+    },
+    {
+      "id": "ishida",
+      "name": "石田",
+      "prompt": "Japanese woman, 25-28 years old. Black short hair, neat. Sitting on floor of small Tokyo apartment at 3AM, wearing loose T-shirt and shorts. Screen lit, fingers tapping. Quiet anger — not explosive, a slight downturning of mouth when seeing something wrong. Behind her: Tokyo night cityscape through window. Blue screen light on face. 3/4 portrait, cinematic, photorealistic."
+    },
+    {
+      "id": "basu",
+      "name": "巴苏",
+      "prompt": "Indian man, 30s, drinking first coffee at 7:50AM in Bangalore. Sitting at a desk, screen in front of him. Reading a line of code, staring at four characters for ten seconds. The face of someone who recognizes something real. Morning light through window. Casual shirt. 3/4 portrait, warm light, cinematic."
+    },
+    {
+      "id": "lucas",
+      "name": "卢卡斯",
+      "prompt": "German man, 30s, second coffee at 9:12AM in Berlin. Minimalist apartment. Reading a Skill's L8 layer, laughing at something. Forking a repository, writing a comment. Clean, precise. Berlin gray light through window. 3/4 portrait, cool light, cinematic."
+    },
+    {
+      "id": "su_qing",
+      "name": "苏晴",
+      "prompt": "Chinese woman, 30s, clear Portuguese accent. Confident, doesn't waste words. Speaking in a video call: '酿造策元的方向是——把经验变成可复用的东西.' Four faces on screen, hers is the first to light up. Warm, direct. 3/4 portrait, screen light, cinematic."
+    },
+    {
+      "id": "chen_mo",
+      "name": "陈默",
+      "prompt": "Chinese man, 30s, typing while on a video call — keyboard sound in background. Deep voice, steady rhythm. Speaking: '每个策元做完之后，经验就散了。' A practitioner's silence — his words come from projects done, not theory. 3/4 portrait, screen light, cinematic."
+    }
+  ]
+}

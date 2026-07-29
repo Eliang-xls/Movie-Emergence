@@ -1,5 +1,3 @@
-$newtitle
-
 二〇二八年。秋天。剑桥市。
 
 季深回MIT了。穹顶在AI实验室做了一个招聘宣讲。二十几个学生坐在地下报告厅里。他讲了四十分钟，关于涌现、关于模型在训练中出现的自组织结构、关于他还不知道答案的问题。
@@ -56,7 +54,7 @@ Vance看着他。停了两秒。
 
 Vance又讲了几分钟。季深没有走。他靠在门框上，听着。
 
-她讲了一个例子。一个建筑师，在两种地基方案之间做选择。两种方案在计算上都是可行的。载荷数据相同。材料成本相同。施工周期相同。但其中一种——这个建筑师见过它在一次地震中失败。他同事设计的。他去看过那个废墟。
+她讲了一个例子。一个建筑师，在两种地基方案之间做选择。两种方案在计算上都是可行的——载荷数据、材料成本、施工周期，全都一样。但其中一种——这个建筑师见过它在一次地震中失败。他同事设计的。他去看过那个废墟。
 
 \"The data says both are equal. But the architect knows something the data doesn't——because he stood in that rubble fifteen years ago. That knowledge is not in any textbook. It's in his body. It's in the way his hand hesitates when he points to方案B on the blueprint.\"
 

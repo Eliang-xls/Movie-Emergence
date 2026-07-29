@@ -1,0 +1,410 @@
+{
+  "meta": {
+    "title": "EMERGENCE — Movie Trailer (English Version)",
+    "version": "2.0",
+    "format": "Google Flow Storyboard",
+    "total_duration_sec": 296,
+    "fps": 24,
+    "resolution": "3840x1608",
+    "aspect_ratio": "2.39:1",
+    "color_space": "DCI-P3",
+    "audio": "7.1.4 Dolby Atmos",
+    "narrative": "Conflict-Driven: Direction Born → Direction Drifts → Direction Guarded",
+    "visual": "T1 lens fog + T2 light beam division + freezing point sand curve + gold/dark red dual color + T11 stone triple intercut + T12 two TAs",
+    "sound": "Two types of silence + TA motif from pen tip to finger to rock",
+    "palette": {
+      "silicon_protocol": "#4A6B8A",
+      "wetware_life": "#C49A6C",
+      "hive_awakening": "#D4A84B",
+      "sea_ripple": "#E8DFC8",
+      "night_moon": "#B8C4D4",
+      "dawn_light": "#F0E6D0",
+      "demon_node": "#8B2D2D"
+    },
+    "visual_motifs": [
+      {
+        "name": "涟漪",
+        "manifestation": "海浪/晶壳脉动/光打碎/手指敲击",
+        "first": "T1",
+        "贯穿": "每段落≥1次"
+      },
+      {
+        "name": "闭眼三秒",
+        "manifestation": "季深闭眼→睁眼",
+        "first": "T2",
+        "appearances": [
+          "T2(安静思考)",
+          "T5(接收消化)",
+          "T9(敬畏确认)"
+        ]
+      },
+      {
+        "name": "嗒/手指敲击",
+        "manifestation": "白板笔嗒+手指敲膝盖/裤缝/礁石",
+        "first": "T2(白板笔)",
+        "appearances": [
+          "T2(笔×2)",
+          "T3(手指)",
+          "T5(手指)",
+          "T9(手指+沙子画线)",
+          "T10(手指标记)",
+          "T12(手指×2)"
+        ]
+      },
+      {
+        "name": "色彩切换",
+        "manifestation": "冷蓝灰↔暖琥珀↔金色↔暗红",
+        "贯穿": "全片"
+      },
+      {
+        "name": "负空间",
+        "manifestation": "巨大天空/海面下很小身影",
+        "first": "T5",
+        "appearances": [
+          "T5",
+          "T9",
+          "T12"
+        ]
+      }
+    ]
+  },
+  "characters": [
+    {
+      "id": "ji_shen",
+      "name": "季深",
+      "years": [
+        2027,
+        2029,
+        2042,
+        2045,
+        2048
+      ],
+      "signature": "闭眼三秒+温度签名(暖雾)+嗒声母题+沙子画冰点曲线"
+    },
+    {
+      "id": "jiang_yuan",
+      "name": "江远",
+      "appearance": "T2",
+      "signature": "语速快+手指转笔+深蓝衬衫+跨光柱写字"
+    },
+    {
+      "id": "gu_qing",
+      "name": "顾清",
+      "appearance": "T5",
+      "signature": "米白毛衣+提问的沉默"
+    },
+    {
+      "id": "deep_blue",
+      "name": "深蓝",
+      "appearance": "T6/T10/T11",
+      "form": "晶壳(湿件载体)+屏幕文字+星图/像素云"
+    },
+    {
+      "id": "lin_yu",
+      "name": "林屿",
+      "appearance": "T7/T10",
+      "signature": "灰卫衣+手环+悬停手指"
+    },
+    {
+      "id": "ji_xing",
+      "name": "季行",
+      "appearance": "T7/T8/T11",
+      "signature": "节奏变慢+2042.11照片+石头"
+    },
+    {
+      "id": "ji_yao",
+      "name": "季遥",
+      "appearance": "T11/T12",
+      "signature": "石头温度+敲击传承"
+    },
+    {
+      "id": "ishida",
+      "name": "石田",
+      "appearance": "T10",
+      "signature": "凌晨3:17标记73次+完美即伪造"
+    },
+    {
+      "id": "basu",
+      "name": "巴苏",
+      "appearance": "T10",
+      "signature": "早上7:50标记71次"
+    },
+    {
+      "id": "lucas",
+      "name": "卢卡斯",
+      "appearance": "T10",
+      "signature": "fork注释'此字段不可伪造'"
+    },
+    {
+      "id": "su_qing",
+      "name": "苏晴",
+      "appearance": "T7",
+      "signature": "葡萄牙语口音"
+    },
+    {
+      "id": "chen_mo",
+      "name": "陈默",
+      "appearance": "T7",
+      "signature": "键盘背景声"
+    }
+  ],
+  "objects": {
+    "props": [
+      {
+        "id": "whiteboard",
+        "name": "白板(英文)",
+        "appears": [
+          "T2",
+          "T3"
+        ],
+        "function": "英文For All Mankind+光柱分割"
+      },
+      {
+        "id": "crystal_shell",
+        "name": "智契晶/晶壳",
+        "appears": [
+          "T1",
+          "T4",
+          "T6",
+          "T11"
+        ],
+        "function": "湿件物理载体—T1温度感先于视觉"
+      },
+      {
+        "id": "wetware_core",
+        "name": "湿核",
+        "appears": [
+          "T1",
+          "T6"
+        ],
+        "function": "Phronesis物理基底"
+      },
+      {
+        "id": "silicon_base",
+        "name": "基座",
+        "appears": [
+          "T1",
+          "T4",
+          "T6"
+        ],
+        "function": "Sophia运行环境"
+      },
+      {
+        "id": "stone",
+        "name": "石头",
+        "appears": [
+          "T8",
+          "T11",
+          "T12"
+        ],
+        "function": "代际传递锚点"
+      },
+      {
+        "id": "photo_2042",
+        "name": "照片2042.11",
+        "appears": [
+          "T8闪切"
+        ],
+        "function": "季行寻父钥匙"
+      },
+      {
+        "id": "wristband",
+        "name": "手环",
+        "appears": [
+          "T7",
+          "T10"
+        ],
+        "function": "策元心跳+蜂群共振"
+      },
+      {
+        "id": "coffee_cup",
+        "name": "咖啡杯",
+        "appears": [
+          "T2",
+          "T6"
+        ],
+        "function": "季深温度签名"
+      },
+      {
+        "id": "laptop",
+        "name": "笔记本电脑",
+        "appears": [
+          "T7",
+          "T9",
+          "T10"
+        ],
+        "function": "界面-窗户"
+      },
+      {
+        "id": "dual_chain",
+        "name": "双链(索菲亚+弗洛涅西斯)",
+        "appears": [
+          "T7"
+        ],
+        "function": "Skill结构可视化+像素光纹CONC签名"
+      },
+      {
+        "id": "star_map",
+        "name": "星图/像素云",
+        "appears": [
+          "T10"
+        ],
+        "function": "深蓝视角+像素光纹"
+      },
+      {
+        "id": "global_map",
+        "name": "全球分布图(金暗双色)",
+        "appears": [
+          "T9",
+          "T10",
+          "T11"
+        ],
+        "function": "金色蜂群+暗红魔胎双色对抗"
+      }
+    ],
+    "conc_network_terms": [
+      "策元",
+      "超织体",
+      "Skill",
+      "引用链",
+      "创意图元池",
+      "第⑧层/印章",
+      "索菲亚链",
+      "弗洛涅西斯链",
+      "八结",
+      "方向档案",
+      "蜂群标记",
+      "像素化光纹(CONC统一签名)"
+    ],
+    "wetware_terms": [
+      "晶壳",
+      "湿核",
+      "涟漪/脉动",
+      "培养液",
+      "暖雾/温度签名",
+      "基座",
+      "神经元更迭",
+      "轮回",
+      "一排晶壳(规模感)"
+    ]
+  },
+  "scenes": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5",
+    "T6",
+    "T7",
+    "T8",
+    "T9",
+    "T10",
+    "T11",
+    "T12"
+  ],
+  "soundscape": {
+    "leitmotifs": [
+      {
+        "id": "ripple",
+        "instruments": "古琴泛音/钢琴单音",
+        "feeling": "从一个点扩散出去"
+      },
+      {
+        "id": "ji_shen",
+        "instruments": "古琴独奏",
+        "feeling": "克制/有重量/安静"
+      },
+      {
+        "id": "gu_qing",
+        "instruments": "古琴+大提琴",
+        "feeling": "流动/有温度/哲学感"
+      },
+      {
+        "id": "deep_blue",
+        "instruments": "电子合成器低频+钢琴",
+        "feeling": "从沉默到声音"
+      },
+      {
+        "id": "stone",
+        "instruments": "钢琴三个音(同一和弦)",
+        "feeling": "三代人同一个方向"
+      },
+      {
+        "id": "hive_motif",
+        "instruments": "采样滴声+弦乐群",
+        "feeling": "个体→集体"
+      },
+      {
+        "id": "finale",
+        "instruments": "古琴余音+脉动声",
+        "feeling": "余韵/方向/开始"
+      }
+    ],
+    "distinct_silences": [
+      {
+        "id": "T6",
+        "type": "被切断的寂静—事件",
+        "desc": "滴答声停了→400ms额外黑暗→极低频振动"
+      },
+      {
+        "id": "T9",
+        "type": "自然存在的寂静—状态",
+        "desc": "海浪声一直在音乐没有进来"
+      }
+    ]
+  },
+  "transitions": [
+    {
+      "from": "T1",
+      "to": "T2",
+      "method": "切黑",
+      "note": "白字幕浮现后消失"
+    },
+    {
+      "from": "T2",
+      "to": "T3",
+      "method": "光线渐变",
+      "note": "关灯→暖黄光收缩→冷蓝月光从窗外漫入"
+    },
+    {
+      "from": "T6",
+      "to": "T7",
+      "method": "视觉残留+闪切",
+      "note": "淡蓝光晕→金色光柱粉笔灰(刘教授闪切)→图书馆"
+    },
+    {
+      "from": "T4",
+      "to": "T5",
+      "method": "声音先行",
+      "note": "画面亮起前先听到海浪声两秒"
+    },
+    {
+      "from": "T6",
+      "to": "T7",
+      "method": "视觉残留",
+      "note": "淡蓝光晕扩散成T7虚拟空间背景光"
+    },
+    {
+      "from": "T9",
+      "to": "T10",
+      "method": "切黑→暗红闪切→金色",
+      "note": "冰点独白后→暗红2s→蜂群金色"
+    },
+    {
+      "from": "T10",
+      "to": "T11",
+      "method": "色彩溶解",
+      "note": "金色光点溶解成晶壳金色"
+    },
+    {
+      "from": "T11",
+      "to": "T12",
+      "method": "切黑+寂静五秒",
+      "note": "音乐突然停止→极低频脉动五秒"
+    },
+    {
+      "default": "切黑",
+      "note": "其余场景间过渡为标准切黑"
+    }
+  ]
+}

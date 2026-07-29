@@ -1,0 +1,114 @@
+[
+  {
+    "id": "T1",
+    "title": "钩子—晶壳",
+    "time": "无明确时间",
+    "location": "黑暗中",
+    "dur": 12,
+    "kf": "0:00-0:12",
+    "dir": "库布里克《2001》+《降临》",
+    "camera": "黑屏2s→画面模糊(镜头起雾,停留1s)→缓慢后拉(雾气消失)→涟漪特写(淡蓝光纹)→揭示晶壳",
+    "lighting": "纯黑→镜头起雾→淡蓝涟漪→半透明琥珀内发光→暖雾冷凝",
+    "prompt": "Darkness. Pure black 2s. Lens begins to FOG. Stay 1 second — audience feels unsettled in the blur. Then pull back SLOWLY — fog clears. Ripple — pale blue light — spreads from unseen center. Pull back further: translucent fist-sized orb, milky core in fluid, fine veins moving like rivers under ice. Thin warm mist on surface. Cinematic scope 2.39:1. Low-frequency pulse every 3s from below.",
+    "audio": "Low-frequency pulse (3s) → water drop echo → faint guqin overtone",
+    "transition": "T1→T2 Cut to black",
+    "visual_elements": [
+      "crystal_shell",
+      "wetware_core",
+      "warm_mist",
+      "ripple"
+    ],
+    "characters": [],
+    "voiceover": "JI SHEN (V.O.): Emergence — when a system becomes complex enough, new properties emerge from the interactions. No one designed it. No one expected it. It just appeared.",
+    "title_card": {
+      "text": "涌现",
+      "font": "白色楷体",
+      "stay": "2s"
+    }
+  },
+  {
+    "id": "T2",
+    "title": "白板—穹顶的诞生",
+    "time": "2027",
+    "location": "加州硅谷办公室",
+    "dur": 13,
+    "kf": "0:12-0:25",
+    "dir": "芬奇《社交网络》+光线作为叙事角色",
+    "camera": "白板特写0.5s(笔尖触碰白板,墨水质感,阳光在字边缘发亮)→后拉至两人中景(先看到光柱分割,再看到字)→白板笔微距特写(嗒声×2)",
+    "lighting": "斜射光柱从天花板斜切到地面→季深侧暖金/江远侧偏冷→光柱落在两人中间",
+    "prompt": "California morning light through blinds. NOT soft light beams — a single diagonal LIGHT BEAM cuts across the room from ceiling corner to floor. Like a blade. Like a wall. Whiteboard: 'For All Mankind.' Blue ink, bleeding at edges. Two men: JI SHEN (39, gray worn T-shirt, eyes CLOSED 3s) stands on left side of beam. JIANG YUAN (42, dark blue shirt, polished shoes, pen cap off) stands on right side. One meter between them — beam falls exactly in the middle. '季深——我们需要一个名字。' 'Dome.' 'Dome is closed.' 'Depends on how you see it.' Ji Shen picks up marker — tip touches board — TA. Writes: 'First, know what we're building.' Blue ink, wrist tremor. Pen tip warm mist. TA. Jiang Yuan walks to LEFT side of beam — stands on Ji Shen's side — writes: 'Then, let the world see it.' Walks back to RIGHT side. 'You write For All Mankind — but you don't write about people. Greed. Fear. What people do for themselves.' 'That's why the protocol needs a governance layer. A constraint is not a wall — it's a direction.'",
+    "audio": "Guqin solo / long notes → marker TA × 2",
+    "transition": "T2→T3 光线渐变: 关灯→暖黄收缩→冷蓝月光漫入",
+    "characters": [
+      "ji_shen",
+      "jiang_yuan"
+    ],
+    "visual_elements": [
+      "whiteboard",
+      "marker",
+      "sunlight"
+    ],
+    "eyes_closed": "first: 思考前安静",
+    "subtitle_card": "Direction doesn't drift suddenly."
+  },
+  {
+    "id": "T3",
+    "title": "夜晚—季深的公寓",
+    "time": "2027深夜",
+    "location": "Palo Alto公寓",
+    "dur": 10,
+    "kf": "0:25-0:35",
+    "dir": "王家卫《花样年华》",
+    "camera": "月光全景→白板特写(深夜潦草字迹)→手指敲击特写",
+    "lighting": "冷蓝银月光",
+    "prompt": "Apartment, no light. Moonlight on whiteboard. 'For All Mankind' in silver-blue. New line added late at night, handwriting shaky: 水不需要被告诉流向哪里。它自己会找到海。 Ji Shen stands alone, half face illuminated, half shadow. Finger taps his jeans — ONE light tap (first finger tap, after T2's two pen TAs). Unconscious. He never notices.",
+    "audio": "Guqin + cello low → neighbor cooking sounds",
+    "transition": "T3→T4 Cut to black",
+    "visual_elements": [
+      "whiteboard",
+      "moonlight"
+    ],
+    "finger_tap": "first-appearance: 从笔尖到手指的递进"
+  },
+  {
+    "id": "T4",
+    "title": "涌现—彩色的点在聚",
+    "time": "2028",
+    "location": "穹顶训练实验室",
+    "dur": 7,
+    "kf": "0:35-0:42",
+    "dir": "维伦纽瓦《降临》",
+    "camera": "屏幕特写→季深脸在蓝光中→横移扫过一排晶壳",
+    "lighting": "蓝色屏幕+角落一排晶壳暖琥珀光→两温度在季深身上交汇",
+    "prompt": "深夜。屏幕蓝光。数千彩色点——外围蓝色(冷色均匀旋转=索菲亚),内层琥珀色(暖色不规则脉动=弗洛涅西斯)。一个蓝点右移,红点跟,黄点围。季深脸在蓝光,但身后一排晶壳在蓝光中脉动——几十个,每个拳头大小,乳白组织悬浮,蓝色底座LED同步闪烁。冷蓝和暖琥珀同时落在他身上。",
+    "audio": "Low-frequency electronic pulse → accelerating with point density",
+    "transition": "T4→T5 声音先行: 切黑后先听到海浪声0.5s→画面亮起",
+    "visual_elements": [
+      "screen",
+      "colored_points",
+      "一排晶壳"
+    ],
+    "voiceover": "JI SHEN (V.O.): I didn't build it. It emerged from the data on its own."
+  },
+  {
+    "id": "T5",
+    "title": "海边—退潮",
+    "time": "2029黄昏",
+    "location": "Half Moon Bay加州",
+    "dur": 13,
+    "kf": "0:42-0:55",
+    "dir": "塔可夫斯基《镜子》",
+    "camera": "远景负空间→脚趾特写→涟漪特写→顾清坐下→季深闭眼3s→手指敲击",
+    "lighting": "金色→橙色→红色→紫色天空渐变",
+    "prompt": "Half Moon Bay December dusk. Huge sky 3/4 frame, tiny figure on sand. Ji Shen barefoot. GU QING (35, cream-white sweater) sits beside him. 十秒 silence. 'Are you afraid?' 'No. I'm in awe.' 'The surge is power. The retreat is the ripple. You have to pull back first, before it can spread.' Ji Shen closes eyes — 3s (second time: digesting). Opens. Finger taps sand. Subtitle card: '每次0.02度。十四个月。' Music stops 2s — only ocean.",
+    "audio": "古琴+大提琴→音乐停2s→海浪声",
+    "transition": "T5→T6 切黑",
+    "characters": [
+      "ji_shen",
+      "gu_qing"
+    ],
+    "eyes_closed": "second: 接收后消化",
+    "finger_tap": "second-appearance",
+    "subtitle_card": "0.02 degrees each time. Fourteen months."
+  }
+]

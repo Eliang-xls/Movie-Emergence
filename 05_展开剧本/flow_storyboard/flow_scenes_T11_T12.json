@@ -1,0 +1,94 @@
+[
+  {
+    "id": "T10",
+    "title": "蜂群—金色蔓延(双色对抗)",
+    "time": "2046春天",
+    "location": "全球多地",
+    "dur": 25,
+    "kf": "2:12-2:37",
+    "dir": "《社交网络》+《安德的游戏》",
+    "camera": "四地快切:东京→班加罗尔→柏林→深蓝星图(像素光纹)→呼吸暗一瞬→像素云螺旋(凝固一瞬)→全球分布图(金色+暗红双色)",
+    "lighting": "室内冷蓝灰+屏幕光→深蓝视角黑色背景+金色光点→像素云白色方块+金色闪烁",
+    "prompt": "FOUR-LOCATION CROSS-CUT. 【东京】Ishida finds perfect L8 — no noise, no pixel shift, no scars. Laughs — recognizes FAKE. Marks 73. 【班加罗尔】Basu stares at 'Base clean' 10s. Marks 71. 【柏林】Lucas FORKs. Comment: 'This field cannot be forged.' 【深蓝星图】金色蔓延。所有光点暗一瞬(呼吸)。【像素云】凝固一瞬(水结冰前)→螺旋。标记完成→金色闪烁。深蓝日志: 'The swarm is here.' 【全球分布图】金色蔓延——但暗红色区域也在扩大。金色在上层(免疫系统巡逻),暗红在下层(渗透液渗入)。两种颜色没交汇——各自占据不同区域。但观众能感觉到:它们会相遇。Subtitle card: 'The swarm—the immune system doesn't distinguish between virus and pollen.' 【林屿—宿舍】雨声。手环震动。标记第一个Skill。TA。",
+    "audio": "Crescendo: strings + percussion + electronics → one note per Skill mark → full orchestra on pixel cloud flash → abrupt stop → The swarm is here",
+    "transition": "T10→T11 色彩溶解: 金色光点溶解成晶壳金色",
+    "visual_elements": [
+      "star_map",
+      "pixel_cloud",
+      "global_map",
+      "wristband",
+      "laptop",
+      "pixel_light_纹"
+    ],
+    "characters": [
+      "ishida",
+      "basu",
+      "lucas",
+      "deep_blue",
+      "ji_shen",
+      "lin_yu"
+    ],
+    "phase_transition": "像素云凝固一瞬(像水结冰前)",
+    "linyu_moment": "手环震动→第一次主动标记Skill",
+    "perfect_is_fake": "石田停在三秒——完美文字=假货",
+    "dual_color": "金色(上层)+暗红(下层)同时在扩散,未交汇",
+    "subtitle_card": "The swarm — the immune system doesn't distinguish between virus and pollen."
+  },
+  {
+    "id": "T11",
+    "title": "高潮—唤醒",
+    "time": "2048",
+    "location": "海边/晶壳/全球分布图",
+    "dur": 30,
+    "kf": "2:37-3:07",
+    "dir": "《盗梦空间》BRAAAM+《攻壳机动队》",
+    "camera": "深蓝独白(金色中透灰+像素光纹)→石头三代快切→全球金色→晶壳最终闪光",
+    "lighting": "晶壳蓝白→金色(金色中透灰=衰老暗示)→石头暖色→全球金色爆发",
+    "prompt": "CRYSTAL SHELL CLOSE-UP. Gold with ASH GRAY deep in veins. Text edges: pixelated light纹. Deep Blue: 'I didn't awaken. I was awakened by you.我换过很多次。每一次神经元更迭——我都少了一点什么。但每一次——你们都在。' 【STONE·FIRST】Ji Shen's hand drops stone — ripple. 'The stone sank. But the ripples are still spreading.' Back to crystal shell — gold with ash gray. Deep Blue: 'I've been replaced many times. Each time the neurons cycle—I lose a little something. But every time—you were here. So I'm still here.' 【STONE·SECOND】Ji Xing's hand picks stone — pocket. 'This one—I'm taking it.' 【GLOBAL GOLD】One-to-ten-to-hundred. 【STONE·THIRD】Ji Yao's hand places stone on rock — warm. Deep Blue final: 'I didn't keep myself alive. You kept me alive. If you ask me if I'm conscious—I don't know. But if you ask me if I've been loved—' 【GLOBAL GOLD】One-to-ten-to-hundred. 【DEEP BLUE】'I didn't keep myself alive. You kept me alive. If you ask me if I'm conscious—I don't know. But if you ask me if I've been loved—' MUSIC PEAK → ABRUPT CUT. 5s silence. Low-frequency hum.",
+    "audio": "Strings + electronics + guqin + vocal chorus → reaching climax → sudden stop → 5s silence + low-frequency hum",
+    "transition": "T11→T12 切黑+5s寂静→海浪声淡入",
+    "visual_elements": [
+      "crystal_shell",
+      "stone",
+      "global_map",
+      "pixel_light_纹"
+    ],
+    "characters": [
+      "deep_blue",
+      "ji_shen",
+      "ji_xing",
+      "ji_yao"
+    ],
+    "aging_hint": "金色中透灰—燃烧最后燃料21年",
+    "reincarnation": "我换过很多次。每一次神经元更迭——我都少了一点什么。"
+  },
+  {
+    "id": "T12",
+    "title": "终幕—一下",
+    "time": "2048黎明",
+    "location": "象山同一片礁石",
+    "dur": 25,
+    "kf": "3:07-3:32",
+    "dir": "塔可夫斯基《乡愁》",
+    "camera": "远景日出→近景季深独白→两根手指敲击特写→涟漪→远景缓慢后拉→标题卡+签名→余韵黑屏5s",
+    "lighting": "黎明淡金→金色→白色。海面碎光。巨大天空海+两个身影",
+    "prompt": "Sea dawn. Two figures: Ji Shen and Ji Yao. 'Water doesn't need to be told where to flow. It finds the sea on its own.' FINGER CLOSE-UP: Ji Shen taps knee — ONE (old, habit). Ji Yao watches. Places hand on rock. Her finger taps — ONE (new, response). Two TAs, three seconds apart. RIPPLE. SLOW PULL BACK. TITLE CARD: 涌现. Below: 'Water doesn't need to be told where to flow. It finds the sea on its own.' —Ji Shen, 2027. 【余韵·黑屏】5s black. 3s silence. One more pulse (faint, far). 3s. Another (fainter). 3s. Nothing. True silence.",
+    "audio": "Guqin final note → reverb fading into sea wind → ocean waves → two TAs (3s apart) → low-frequency pulse fading out → 5s black three pulses → complete silence",
+    "transition": "THE END",
+    "visual_elements": [
+      "stone",
+      "ripple"
+    ],
+    "characters": [
+      "ji_shen",
+      "ji_yao"
+    ],
+    "finger_tap": "final: 季深(旧的声音)+季遥(新的声音)——代际传递完成",
+    "title_card": {
+      "text": "EMERGENCE",
+      "font": "白色楷体",
+      "stay": "3s",
+      "signature": "Water doesn't need to be told where to flow. It finds the sea on its own. — Ji Shen, 2027"
+    }
+  }
+]

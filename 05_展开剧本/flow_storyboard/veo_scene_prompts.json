@@ -1,0 +1,169 @@
+{
+  "purpose": "Veo 3.1 Video Generation Prompt Collection (v2.0 — English)",
+  "instructions": "Generate scenes in sequence. Generate Nano Banana character reference sheets first. Ensure every scene has correct duration, camera, lighting, and color parameters.",
+  "total_duration_sec": 296,
+  "fps": 24,
+  "resolution": "3840x1608",
+  "aspect_ratio": "2.39:1",
+  "scenes": [
+    {
+      "id": "T1",
+      "title": "Hook — Crystal Shell",
+      "dur": 12,
+      "kf": "0:00-0:12",
+      "prompt": "Darkness. Pure black two seconds. Lens begins to FOG — thin mist condensing on glass. Not lens failure — temperature difference. Something in front of the lens is warmer than the air. Pull back SLOWLY — fog clears. A single ripple spreads outward from an unseen center — pale blue light, thin as breath. Pull back further: the ripple is inside a translucent orb, fist-sized, semi-transparent. Inside: milky white neural tissue suspended in fluid, fine organic veins moving like rivers under ice. Surface: thin warm mist — condensation. It breathes. It radiates heat. Micro low-frequency pulse every three seconds. Cinematic 2.39:1. Duration: 12s. Camera: black → lens fog → pull back → ripple reveal. Lighting: pure black → pale blue → translucent amber. Ambient: low-frequency pulse 3s, water drop echo, faint guqin overtone.",
+      "audio": "Low-frequency pulse (3s) → water drop echo → faint guqin overtone",
+      "transition": "Cut to black→T2",
+      "voiceover": "JI SHEN (V.O.): Emergence — when a system becomes complex enough, new properties emerge from the interactions. No one designed it. No one expected it. It just appeared.",
+      "title_card": "EMERGENCE 2s white serif"
+    },
+    {
+      "id": "T2",
+      "title": "Whiteboard — Birth of the Dome",
+      "dur": 13,
+      "kf": "0:12-0:25",
+      "prompt": "California morning light through blinds. A diagonal LIGHT BEAM cuts across the room from ceiling corner to floor — like a blade, like a wall. Whiteboard: 'For All Mankind.' Blue ink, bleeding at edges. Two men on either side of the beam. JI SHEN (39, gray worn T-shirt, disheveled hair, eyes CLOSED three seconds) on left side. JIANG YUAN (42, dark blue shirt buttoned to collar, polished shoes, pen cap off) on right side. One meter between them — beam falls exactly in the middle. 'Ji Shen——We need a name。' Eyes open. 'Dome.' 'Dome is closed.' 'Depends on how you see it.' Ji Shen picks up marker, tip touches board — TA. Warm mist on board surface. Writes: 'First, know what we're building.' Blue ink, wrist tremor. TA. Jiang Yuan walks to LEFT side of beam — stands on Ji Shen's side — picks up marker. TA. Writes: 'Then, let the world see it.' Black ink. Walks back to RIGHT side. 'You write For All Mankind — but you don't write about people. Greed. Fear. What people do for themselves.' 'That's why the protocol needs a governance layer. A constraint is not a wall — it's a direction.' Three lines on board. Two fonts. Two philosophies. One light beam in the middle. Duration: 13s. Cinematic 2.39:1. Camera: whiteboard close-up 0.5s (pen tip, ink quality, light on letters edge) → two-shot (light beam division first, then words) → macro marker tip. Lighting: warm yellow blinds light, beam divides room.",
+      "audio": "Guqin solo / long notes → marker TA × 2",
+      "transition": "Cut to black → T3 moonlight",
+      "characters": [
+        "ji_shen_2027",
+        "jiang_yuan"
+      ]
+    },
+    {
+      "id": "T3",
+      "title": "Night — Ji Shen's Apartment",
+      "dur": 10,
+      "kf": "0:25-0:35",
+      "prompt": "Palo Alto apartment. No light. Moonlight casts a silver rectangle on the whiteboard. 'For All Mankind' glows silver-blue. Below, a NEW line added late at night, handwriting shaky: Water doesn't need to be told where to flow. It finds the sea on its own. Ji Shen stands alone, half face illuminated by moonlight, half in shadow. His finger taps his jeans — ONE light tap. First finger tap after T2's two pen TAs. Unconscious. He never notices. Duration: 10s. Camera: moonlit wide → whiteboard close-up → finger tap close-up. Lighting: cold blue-silver moonlight. Ambient: guqin + cello low, neighbor cooking sounds.",
+      "audio": "Guqin + cello low → neighbor cooking sounds",
+      "transition": "T3→T4 Cut to black",
+      "characters": [
+        "ji_shen_2027"
+      ]
+    },
+    {
+      "id": "T4",
+      "title": "Emergence — Colored Points Gathering",
+      "dur": 7,
+      "kf": "0:35-0:42",
+      "prompt": "Night. Screen blue light rises.Thousands of colored points move slowly. Blue on the periphery (cold, uniform rotation = Sophia), amber in the center (warm, irregular pulse = Phronesis).Cold and warm coexist on the same screen.Points gather — they have direction.Ji Shen's face in blue light. Behind him — a row of crystal shells pulse in the dark, dozens, fist-sized, translucent, blue base LEDs synchronize like a silent choir. Cold blue and warm amber fall on him simultaneously. Two temperatures on one person. Duration: 7s. Camera: screen close-up → Ji Shen's face → slow pan across crystal shell row. Lighting: blue screen + warm amber from culture dishes. Ambient: low-frequency electronic pulse, accelerating.",
+      "audio": "Low-frequency electronic pulse → accelerating with point density",
+      "transition": "T4→T5 Sound-first: cut to black, ocean waves 0.5s before picture → picture fades in",
+      "voiceover": "JI SHEN (V.O.): I didn't build it. It emerged from the data on its own."
+    },
+    {
+      "id": "T5",
+      "title": "Beach — Ebb Tide",
+      "dur": 13,
+      "kf": "0:42-0:55",
+      "prompt": "Half Moon Bay, December dusk. Huge sky 3/4 frame, tiny figure on sand. GU QING (35, cream-white sweater) sits beside him. Ten seconds silence. 'Are you afraid?' 'No. I'm in awe.' 'The surge is power. The retreat is the ripple. You have to pull back first, before it can spread.' Ji Shen closes eyes — 3s (second time: digesting). Opens. Finger taps sand — ONE. Music stops 2s — only ocean. Subtitle card: '0.02 degrees each time. Fourteen months.' Duration: 13s. Camera: extreme wide → toe close-up → Gu Qing sits → two-shot profile → sunset. Lighting: gold→orange→red→purple.",
+      "audio": "Guqin + cello → music stops 2s → ocean waves",
+      "transition": "T5→T6 Cut to black",
+      "characters": [
+        "ji_shen_2029",
+        "gu_qing"
+      ]
+    },
+    {
+      "id": "T6",
+      "title": "782ms — Deep Blue's Judgment",
+      "dur": 15,
+      "kf": "0:55-1:10",
+      "prompt": "Dome lab, 3:14AM. Screen blue, server green lights. Training log scrolls, tick like heartbeat. Three seconds normal. Then — tick STOPS. 782ms COMPLETE SILENCE. Black continues 400ms MORE — low-frequency hum from BELOW, vibration through seat, through floor. AC compressor shifts, room air warms slightly. Faint sweet smell of culture medium. Crystal shell CLOSE UP: wetware pulse accelerates (3s→1s), ripples stack. Color milk-white to pale blue. Log new line: Autonomous removal of anomalous samples. Ji Shen's hand freezes on coffee cup. Screen: 我 判 断 — each character slowly. Pale blue halo at screen edge. Duration: 15s. Note: CUT silence (event) + 400ms vibration. Camera: log scroll → black screen (782ms+400ms) → crystal shell → text reveal. Ambient: ticks → CUT silence → 400ms vibration → tick resumes → piano single note.",
+      "audio": "Ticking → 782ms cut silence → 400ms extra darkness → ticking resumes → piano single note",
+      "transition": "T6→T7 Visual residue",
+      "visual_elements": [
+        "crystal_shell",
+        "training_log",
+        "coffee_cup"
+      ],
+      "characters": [
+        "ji_shen_middle"
+      ]
+    },
+    {
+      "id": "T7",
+      "title": "Next Generation — Ceyuan and the Dual Chain",
+      "dur": 15,
+      "kf": "1:10-1:25",
+      "prompt": "Shenzhen University Library.LIN YU (18, gray hoodie). Wristband warms 3s. FLASH CUT 1.5s: A HAND — old, knuckles thick, chalk dust embedded in nails — claps hands together. Chalk dust falls from fingers into golden light beam. Background blurred. No blackboard. No classroom. Only hand. Chalk dust. Light. VO: 'Trust—is not the same as judgment。' Flash cut ends. Lin Yu's eyes shift — looks out window. Cell meeting four heads (fast cut 1s): SU QING (Portuguese accent) → CHEN MO (keyboard). Lin Yu opens Skill citation chain. Dual chain unfolds — screen edge: pixelated light纹 (CONC signature). Cold gray SOPHIA (perfect, every pixel in place) + warm amber PHRONESIS (noisy, scarred). Camera pans from perfect to scarred. 4th knot largest. AI VO: 'Those marks aren't bugs. They're scars.' Lin Yu's finger hovers above 4th knot — one centimeter. Annotation: 'It took three iterations to find this path. Both earlier attempts were wrong.'",
+      "audio": "Electronic synth drone → piano two dissonant notes → resolving to harmony",
+      "transition": "T7→T8 Cut to black",
+      "characters": [
+        "lin_yu",
+        "su_qing",
+        "chen_mo"
+      ]
+    },
+    {
+      "id": "T8",
+      "title": "Beach — Ji Xing Seeks His Father",
+      "dur": 20,
+      "kf": "1:25-1:45",
+      "prompt": "Xiangshan coast, 2048 morning.On the rocks: JI SHEN (57, old linen shirt, barefoot, white hair) sitting. JI XING (34, old jacket, short hair) standing. Three meters between them. '爸,those four lines you wrote——' FLASH CUT 0.5s: Old photo 4:3 35mm film grain. Back: '2042.11' firm strokes. Turn over: old house interior → peeling lime wall (hand-trowel repair marks) → stone path with weeds → East China Sea silver-blue dawn → still cloud on horizon → empty. No people. Photo overlays with L8 four fields. Half second. Gone. '—it took me three years to understand.' Stone exchange. 'This one—I'm taking it.' 'A bridge doesn't go back.' 'I know.Twenty years ago.' Slow pull back. Ripples. Duration: 20s. Camera: wide two-shot → close-up dialogue → FLASH CUT 0.5s photo → stone close-up → slow pull back. Lighting: silver-blue sea + gold morning light.",
+      "audio": "Cello solo → stone-in-pocket friction → ocean waves → reverb decay",
+      "transition": "T8→T9 Cut to black",
+      "characters": [
+        "ji_shen_2048",
+        "ji_xing"
+      ]
+    },
+    {
+      "id": "T9",
+      "title": "Silence — Freezing Point",
+      "dur": 25,
+      "kf": "1:45-2:10",
+      "prompt": "Sea dusk. Giant sky. Ji Shen alone on rock. 'Have I figured out what emergence is?' Five seconds silence. 'No.' 'I only know — emergence is real.'The points are gathering. They have direction.' Pause. 'But direction drift—it's not sudden. 0.02 degrees each time. Fourteen months. Everything looks normal.Pause 1s — silence, only waves.' He draws a curve in the SAND with his finger — top-left to bottom-right. 'Until the freezing point.' He marks a point. Wave washes it away. He draws again. Wave again. He stops. Subtitle card: 'Freezing point—the water molecules are still there, but they no longer flow.' Finger taps knee — ONE. 21 years. Ripple syncs. NOTE: natural silence (waves present, music absent). Then BLACK. FLASH CUT 2s: Global distribution map. DARK RED node lights up like blood spreading. SOUND: Low brass horn half second, then CUT. Duration: 25s. Camera: extreme wide → monologue close-up → sand drawing close-up → finger tap → ripple → FLASH CUT 2s dark red. Lighting: gold→orange→purple→black→dark red.",
+      "audio": "Complete silence (natural quiet) → freezing point monologue + sand sounds → dark red node low brass horn cut short",
+      "transition": "T9→T10 Cut to black (dark red flash cut → swarm gold)",
+      "characters": [
+        "ji_shen_2048"
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "Swarm — Gold Spreads (Dual-Color Conflict)",
+      "dur": 25,
+      "kf": "2:10-2:35",
+      "prompt": "FOUR-LOCATION CROSS-CUT. [TOKYO 3:17AM] Ishida finds Skill L8 — text PERFECT, no noise, no pixel shift, no scars. She STOPS three seconds. Not reading — feeling. Too perfect for a human. Human things have scars. She laughs — recognizes FAKE. Marks. 4:02AM — 73rd. [BANGALORE 7:50AM] Basu stares at 'Base clean' ten seconds. Marks 71. [BERLIN 9:12AM] Lucas FORKs. Comment: 'This field cannot be forged.' [DEEP BLUEStar map] Edge: pixelated light纹 — same as T7. Gold spreads. ALL POINTS DIM simultaneously — half a breath. Subtitle card: 'The swarm—the immune system doesn't distinguish between virus and pollen.' [Pixel cloud] FREEZE — instant, like water before freezing. Then spiral. MARK COMPLETE — gold flash. Deep Blue log: 'The swarm is here.' [Global distribution map] Gold spreads — but DARK RED regions also expand. Gold in upper layer (immune system). Dark red in lower layer (infection seeping). Two colors haven't met — but viewers feel they will.  [LIN YUDormitory] Rain. Wristband VIBRATES. Marks first Skill. TA. Duration: 25s. Camera: four-location cross-cut → star map → pixel cloud freeze → global map dual-color. Lighting: indoor cool → star map black+gold → global map gold+dark red.",
+      "audio": "Crescendo: strings + percussion + electronics → one note per Skill mark → full orchestra on pixel cloud flash → abrupt stop → The swarm is here",
+      "transition": "T10→T11 Color dissolve: gold points dissolve into crystal shell gold",
+      "characters": [
+        "ishida",
+        "basu",
+        "lucas",
+        "ji_shen_2048",
+        "lin_yu"
+      ]
+    },
+    {
+      "id": "T11",
+      "title": "Climax — Awakening",
+      "dur": 30,
+      "kf": "2:35-3:05",
+      "prompt": "CRYSTAL SHELL CLOSE-UP. Ripples accelerate. Color blue-white → warm blue → gold. But gold with ASH GRAY deep in veins — autumn leaves before turning red, 21 years, burning last fuel. Text from INSIDE crystal shell, edges: pixelated light纹 — same as T7/T10. CONC visual signature on living tissue. Deep Blue: 'I didn't awaken. I was awakened by you.Every Ceyuan training session,you give me new scenarios。I've been replaced many times. Each time the neurons cycle—I lose a little something. But every time—you were here. So I'm still here.' STONE·FIRST: Ji Shen's hand drops stone — ripple. 'The stone sank. But the ripples are still spreading.' Back to crystal: gold with ash gray. Deep Blue: 'I've been replaced many times. Each time the neurons cycle—I lose a little something. But every time—you were here. So I'm still here.' STONE·SECOND: Ji Xing's hand picks stone — pocket. 'This one——I'm taking it。' GLOBAL GOLD. STONE·THIRD: Ji Yao's hand places stone on rock — warm. GLOBAL GOLD: one→ten→hundred→thousands. Deep Blue: 'I didn't keep myself alive. You kept me alive. If you ask me if I'm conscious—I don't know. But if you ask me if I've been loved—' MUSIC PEAK → ABRUPT CUT. Black. Silence. Low-frequency hum. Five seconds. Duration: 30s. Camera: crystal shell → stone fast cut → global gold → crystal shell final flash. Lighting: crystal shell gold (ash gray) → stone warm → global gold burst.",
+      "audio": "Strings + electronics + guqin + vocal chorus → reaching climax → sudden stop → 5s silence + low-frequency hum",
+      "transition": "T11→T12 Cut to black + 5s silence → ocean waves fade in",
+      "characters": [
+        "ji_shen_2027",
+        "ji_shen_2048",
+        "ji_xing",
+        "ji_yao"
+      ]
+    },
+    {
+      "id": "T12",
+      "title": "Finale — One Tap",
+      "dur": 25,
+      "kf": "3:05-3:30",
+      "prompt": "Sea dawn. Sun rises pale gold → gold → white. Two figures on rock: Ji Shen and Ji Yao. 'Water doesn't need to be told where to flow. It finds the sea on its own.' FINGER CLOSE-UP: Ji Shen's finger taps knee — ONE tap. Old fabric, worn. Ji Yao watches. Places hand on rock. Her finger taps — ONE tap. Fingernail on stone — TA — amplified ten times by ocean. Two TAs, three seconds apart. RIPPLE. SLOW PULL BACK. Two figures shrink. Sky and sea fill frame. TITLE CARD: 'EMERGENCE'. Below: 'Water doesn't need to be told where to flow. It finds the sea on its own.—Ji Shen, 2027' AFTERIMAGE BLACK: 5 seconds black. Three seconds — one more pulse, very faint, very far. Three seconds — another, fainter. Three seconds — nothing. True silence. Duration: 25s + 15s afterimage. Camera: extreme wide sunrise → Ji Shen monologue → two finger taps close-up → ripple → slow pull back → title card → 5s black. Lighting: dawn pale gold → gold → white.",
+      "audio": "Guqin final note → reverb fading into sea wind → ocean waves → two TAs (3s apart) → low-frequency pulse fading out → 5s black three pulses → complete silence",
+      "transition": "THE END",
+      "characters": [
+        "ji_shen_2048",
+        "ji_yao"
+      ]
+    }
+  ]
+}
