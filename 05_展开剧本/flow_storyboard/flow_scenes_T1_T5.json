@@ -22,8 +22,9 @@
     "voiceover": "JI SHEN (V.O.): Emergence — when a system becomes complex enough, new properties emerge from the interactions. No one designed it. No one expected it. It just appeared.",
     "title_card": {
       "text": "涌现",
-      "font": "白色楷体",
-      "stay": "2s"
+      "font": "白色楷体(带涟漪波动动画)",
+      "stay": "2s",
+      "note": "字体有微微波动感,像水面涟漪——T1在问'涌现是什么',答案在T10"
     }
   },
   {
@@ -78,9 +79,9 @@
     "dur": 7,
     "kf": "0:35-0:42",
     "dir": "维伦纽瓦《降临》",
-    "camera": "屏幕特写→季深脸在蓝光中→横移扫过一排晶壳",
-    "lighting": "蓝色屏幕+角落一排晶壳暖琥珀光→两温度在季深身上交汇",
-    "prompt": "深夜。屏幕蓝光。数千彩色点——外围蓝色(冷色均匀旋转=索菲亚),内层琥珀色(暖色不规则脉动=弗洛涅西斯)。一个蓝点右移,红点跟,黄点围。季深脸在蓝光,但身后一排晶壳在蓝光中脉动——几十个,每个拳头大小,乳白组织悬浮,蓝色底座LED同步闪烁。冷蓝和暖琥珀同时落在他身上。",
+    "camera": "全屏彩点从画面边缘涌入→汇聚成螺旋形→季深脸在蓝光中→横移扫过一排晶壳",
+    "lighting": "彩色光点覆盖整个画面+角落一排晶壳暖琥珀光→两温度在季深身上交汇",
+    "prompt": "深夜。全屏彩点从画面边缘涌入——不是屏幕内的点,是整个银幕被数千彩色点覆盖。外围蓝色(冷色均匀旋转=索菲亚),内层琥珀色(暖色不规则脉动=弗洛涅西斯)。一个蓝点右移,红点跟,黄点围。观众成为季深的视角——'我看到了涌现'。然后切到季深脸在蓝光,身后一排晶壳在蓝光中脉动——几十个,每个拳头大小,乳白组织悬浮,蓝色底座LED同步闪烁。冷蓝和暖琥珀同时落在他身上。",
     "audio": "Low-frequency electronic pulse → accelerating with point density",
     "transition": "T4→T5 声音先行: 切黑后先听到海浪声0.5s→画面亮起",
     "visual_elements": [
@@ -98,10 +99,10 @@
     "dur": 13,
     "kf": "0:42-0:55",
     "dir": "塔可夫斯基《镜子》",
-    "camera": "远景负空间→脚趾特写→涟漪特写→顾清坐下→季深闭眼3s→手指敲击",
-    "lighting": "金色→橙色→红色→紫色天空渐变",
-    "prompt": "Half Moon Bay December dusk. Huge sky 3/4 frame, tiny figure on sand. Ji Shen barefoot. GU QING (35, cream-white sweater) sits beside him. 十秒 silence. 'Are you afraid?' 'No. I'm in awe.' 'The surge is power. The retreat is the ripple. You have to pull back first, before it can spread.' Ji Shen closes eyes — 3s (second time: digesting). Opens. Finger taps sand. Subtitle card: '每次0.02度。十四个月。' Music stops 2s — only ocean.",
-    "audio": "古琴+大提琴→音乐停2s→海浪声",
+    "camera": "远景负空间→脚趾特写→涟漪特写→顾清坐下→【运镜突变】缓慢推到顾清脸特写(全片首次)→季深闭眼3s→手指敲击",
+    "lighting": "金色→橙色→红色→紫色天空渐变(顾清脸特写时紫色更冷)",
+    "prompt": "Half Moon Bay December dusk. Huge sky 3/4 frame, tiny figure on sand. Ji Shen barefoot. GU QING (35, cream-white sweater) sits beside him. 十秒 silence. 'Are you afraid?' 'No. I'm in awe.' 'The surge is power. The retreat is the ripple. You have to pull back first, before it can spread.' 停顿后——镜头缓慢推到顾清的脸特写(全片第一次给顾清脸特写)。她不是在说道理,是在预言——眼神看向海面,焦点在更远的地方。海浪声降低一半音量。她轻声说: 'A system without contradiction is not more perfect. It is unreal.' 不真实三个字落在寂静里。Ji Shen closes eyes — 3s (second time: digesting). Opens. Finger taps sand. Subtitle card: '每次0.02度。十四个月。' Music stops 2s — only ocean.",
+    "audio": "古琴+大提琴→音乐停2s→海浪声(顾清哲学话时海浪降半音)",
     "transition": "T5→T6 切黑",
     "characters": [
       "ji_shen",
@@ -109,6 +110,7 @@
     ],
     "eyes_closed": "second: 接收后消化",
     "finger_tap": "second-appearance",
+    "gu_qing_philosophy": "一个没有矛盾的系统,不是更完美。是不真实。——为T9哥德尔回响播种",
     "subtitle_card": "0.02 degrees each time. Fourteen months."
   }
 ]

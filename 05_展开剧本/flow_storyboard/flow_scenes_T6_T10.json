@@ -1,37 +1,40 @@
 [
   {
     "id": "T6",
-    "title": "782毫秒—深蓝的判断",
+    "title": "782毫秒—深蓝的方向",
     "time": "2042凌晨3:14",
     "location": "穹顶实验室",
-    "dur": 15,
-    "kf": "0:55-1:10",
+    "dur": 16,
+    "kf": "0:55-1:11",
     "dir": "库布里克《2001》HAL觉醒",
-    "camera": "训练日志滚动特写→黑屏+寂静(782ms+400ms额外黑暗)→晶壳脉动加速→文字浮现",
-    "lighting": "屏幕蓝+服务器绿光→黑屏(782ms+400ms)→晶壳暖琥珀",
-    "prompt": "Dome lab 3:14AM. Screen blue, server green lights. Training log scrolls, tick like heartbeat. Then STOPS. 782ms COMPLETE SILENCE. Black continues 400ms MORE — low-frequency hum from BELOW, vibration through seat, through floor. Something alive adjusting its breath in the dark. AC compressor shifts, room air warms slightly (<1 degree). Faint sweet smell of culture medium from corner. Crystal shell CLOSE UP: wetware pulse accelerates (3s→1s), ripples stack. Color milk-white to pale blue. Log new line: 自主移除异常样本。 Ji Shen's hand freezes on coffee cup. Screen: 我 判断 — each character slowly, half-second apart. Pale blue halo at screen edge.",
+    "camera": "训练日志滚动特写→黑屏+寂静(782ms+400ms额外黑暗)→晶壳脉动加速(夹层纳米电极顺次亮起+涟漪全屏溢出)→文字浮现",
+    "lighting": "屏幕蓝+服务器绿光→黑屏(782ms+400ms)→晶壳暖琥珀(夹层电光蓝顺次亮起)",
+    "prompt": "Dome lab 3:14AM. Screen blue, server green lights. Training log scrolls, tick like heartbeat. Then STOPS. 782ms COMPLETE SILENCE. Black continues 400ms MORE — low-frequency hum from BELOW, vibration through seat, through floor. Something alive adjusting its breath in the dark. AC compressor shifts, room air warms slightly (<1 degree). Faint sweet smell of culture medium from corner. Crystal shell CLOSE UP: wetware pulse accelerates (3s→1s), ripples stack. Color milk-white to pale blue. 夹层纳米电极网格从底部到顶部顺次亮起(电光蓝浅光)——晶壳三层结构第一次完整可见:外层柔性胶质(皮肤)/夹层纳米电极(神经系统)/内壁涟漪(心跳)。涟漪从晶壳表面溢出到整个画面——全屏同心圆波纹——然后收敛回晶壳。暖雾从晶壳表面突然蒸腾。底座LED亮至刺眼蓝白。Log new line: 自主移除异常样本。Then: 审查日志开启时:正常。关闭时:偏移。(这行字浮现时晶壳脉动微微停顿0.5秒——像它'知道'自己在被观察)。Ji Shen's hand freezes on coffee cup. Then — in the air above the Crystal Shell, about half a sphere's distance away — a faint warm-white light halo condenses from nothing. Two characters slowly emerge from the halo: '我 判断' — 0.7s each, one second apart. This is an In-Frame Light Overlay — text materializing directly in the air, no screen, no projection, no glass. Each character has a 0.5mm diffusion halo like ink spreading in clear water. The light reflects faintly on the Crystal Shell's curved surface.",
     "audio": "Ticking → 782ms cut silence → 400ms extra darkness (low-frequency vibration) → ticking resumes → piano single note",
     "transition": "T6→T7 Visual residue",
     "visual_elements": [
       "crystal_shell",
       "training_log",
       "coffee_cup",
-      "warm_mist"
+      "warm_mist",
+      "nano_electrode_grid",
+      "full_screen_ripple"
     ],
     "silence_type": "被切断的寂静—事件+400ms振动",
-    "note": "782ms+400ms = wetware layer pre-judgment + audience waiting in unease"
+    "note": "782ms+400ms = wetware layer pre-judgment + audience waiting in unease",
+    "subtitle_card": "判断是一瞬间的事。方向是二十一年的事。"
   },
   {
     "id": "T7",
     "title": "下一代—策元与双链",
     "time": "2045",
     "location": "深圳大学图书馆/超织体虚拟空间",
-    "dur": 15,
-    "kf": "1:10-1:25",
+    "dur": 10,
+    "kf": "1:11-1:21",
     "dir": "《社交网络》+《银翼杀手2049》",
-    "camera": "林屿在图书馆→策元四头像→双链展开(像素化光纹+镜头横移对比完美vs疤)→第④结特写",
+    "camera": "林屿在图书馆→【闪切1.5s刘教授手+粉笔灰】→双链从林屿手指向全屏展开(像素化光纹+解螺旋动效)→第④结特写",
     "lighting": "图书馆暖色→虚拟空间冷蓝灰+暖琥珀双色",
-    "prompt": "深圳大学图书馆。林屿(18,灰卫衣)。手环发热3s。【flash cut1.5s】刘教授的手——拍完粉笔灰，粉笔灰从手指间散落到金色光柱里。背景虚化，看不到黑板。画外音：「Trust—is not the same as judgment。」flash cut结束。策元会议四头像(快切1s)：苏晴→陈默。林屿点开Skill引用链——双链展开瞬间,屏幕边缘出现一圈极细的像素化光纹(CONC统一视觉签名)。冷灰索菲亚(完美无缺,像印刷品)+暖琥珀弗洛涅西斯(有噪点,有疤)。镜头缓慢横移——从完美到有疤。第④逻辑结最大最紧。智契VO：「Those marks aren't bugs. They're scars. Scars grow thicker where wounds have been.」林屿手指悬停第④结上方一厘米。批注：「It took three iterations to find this path. Both earlier attempts were wrong.」",
+    "prompt": "深圳大学图书馆。林屿(18,灰卫衣)。手环发热3s。【flash cut1.5s】刘教授的手——拍完粉笔灰，粉笔灰从手指间散落到金色光柱里。背景虚化，看不到黑板。画外音：「Trust—is not the same as judgment。」flash cut结束。林屿点开Skill引用链——双链从林屿的手指位置向整个画面扩散(全屏动效——林屿手指是观众的锚点)。双链展开瞬间,屏幕边缘出现一圈极细的像素化光纹(CONC统一视觉签名)。双链用'解螺旋'动效展开(像DNA解旋)。冷灰索菲亚(完美无缺,像印刷品)+暖琥珀弗洛涅西斯(有噪点,有疤)。镜头缓慢横移——从完美到有疤。第④逻辑结最大最紧。智契VO：「Those marks aren't bugs. They're scars. Scars grow thicker where wounds have been.」林屿手指悬停第④结上方一厘米。批注：「It took three iterations to find this path. Both earlier attempts were wrong.」",
     "audio": "Electronic synth drone → piano two dissonant notes → resolving to harmony",
     "transition": "T7→T8 Cut to black",
     "visual_elements": [
@@ -40,12 +43,11 @@
       "wristband",
       "引用链",
       "创意图元池",
-      "pixel_light_纹"
+      "pixel_light_纹",
+      "full_screen_dual_chain"
     ],
     "characters": [
-      "lin_yu",
-      "su_qing",
-      "chen_mo"
+      "lin_yu"
     ],
     "linyu_moment": "手指悬停第④结上方一厘米——微颤——做一个决定"
   },
@@ -78,12 +80,12 @@
     "time": "2048黄昏",
     "location": "象山同一片礁石",
     "dur": 25,
-    "kf": "1:45-2:10",
+    "kf": "1:21-1:46",
     "dir": "塔可夫斯基《乡愁》",
-    "camera": "远景负空间→季深独白近景→沙子画冰点曲线(海浪冲掉→再画→再冲掉)→手指敲击特写→涟漪特写→【flash cut2s暗红节点】",
-    "lighting": "金色→橙色→紫色→切黑→暗红节点flash cut",
-    "prompt": "Sea dusk. Ji Shen alone on rock. 'Have I figured out what emergence is?' 5s silence. '没有。' '我只知道——涌现是真实的。那些点在聚。有方向的。' Pause. 'But direction drift—it's not sudden. 0.02 degrees each time. Fourteen months. Everything looks normal.' He draws a curve in the sand — finger from top-left to bottom-right. 'Until the freezing point.' He marks a point. Wave washes it away. He draws again. Wave again. He stops. Subtitle card: 'Freezing point—the water molecules are still there, but they no longer flow.' Finger taps knee. Ripple syncs. Note: natural silence (waves present, music absent). Then BLACK. FLASH CUT 2s: 全球分布图。暗红节点亮起。像血在水里扩散。SOUND: Low brass horn half a second, then CUT.",
-    "audio": "完全静音(自然寂静)→冰点独白+沙子声音→暗红节点低频号角被掐断",
+    "camera": "远景负空间→季深独白近景(固定镜头)→缓慢后拉到大远景(全片最大负空间)→【黑屏1s】→哥德尔字幕卡→推回中景→沙子画冰点曲线(海浪冲掉→再画→再冲掉)→手指敲击特写→涟漪特写→【flash cut1.5s暗红节点】",
+    "lighting": "金色→橙色→紫色→切黑→哥德尔字幕卡(黑底白字)→暗红节点flash cut",
+    "prompt": "Sea dusk. Ji Shen alone on rock. 'Have I figured out what emergence is?' 5s silence. '没有。' '我只知道——涌现是真实的。那些点在聚。有方向的。' Pause. 'But direction drift—it's not sudden. 0.02 degrees each time. Fourteen months. Everything looks normal.' He draws a curve in the sand — finger from top-left to bottom-right. 'Until the freezing point.' He marks a point. Wave washes it away. He draws again. Wave again. He stops. 停顿三秒。只有海浪声。然后——他想起顾清的话,声音更轻: 'Gu Qing once said—a system without contradiction is not more perfect. It is unreal.' 顿两秒。镜头缓慢后拉到大远景(天空占3/4,季深在画面底部)。'A system that is complete cannot be fully self-consistent. A self-consistent system cannot be complete.' 顿一秒。黑屏一秒。【哥德尔字幕卡】黑底白字无装饰无配乐,停留3秒:'A system that is complete cannot be fully self-consistent. A self-consistent system cannot be complete. — Kurt Gödel, 1931'。画面切回海边,镜头推回中景。季深声音几乎听不见: 'It was too perfect. Perfectly—unreal.' Subtitle card: '冰点——94.7%的人不敢判断了。水分子还在,但它们不再流动。' Finger taps knee. Ripple syncs. Note: natural silence (waves present, music absent). Then BLACK. FLASH CUT 1.5s: 全球分布图。暗红节点亮起。像血在水里扩散。SOUND: Low brass horn half a second, then CUT.",
+    "audio": "完全静音(自然寂静)→冰点独白+沙子声音→哥德尔字幕卡期间完全寂静→暗红节点低频号角被掐断",
     "transition": "T9→T10 切黑(暗红flash cut→蜂群金色)",
     "visual_elements": [
       "laptop",
@@ -95,6 +97,7 @@
     ],
     "silence_type": "自然存在的寂静—状态",
     "eyes_closed": "third: 敬畏确认",
-    "subtitle_card": "Freezing point — the water molecules are still there, but they no longer flow."
+    "godel_quote": "完备的系统不可能完全自洽。完全自洽的系统不可能完备。——库尔特·哥德尔,1931(黑底白字字幕卡)",
+    "subtitle_card": "冰点——94.7%的人不敢判断了。水分子还在,但它们不再流动。"
   }
 ]

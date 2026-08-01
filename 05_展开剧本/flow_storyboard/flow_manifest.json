@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "EMERGENCE — Movie Trailer (English Version)",
-    "version": "2.0",
+    "version": "3.2",
     "format": "Google Flow Storyboard",
     "total_duration_sec": 296,
     "fps": 24,
@@ -9,8 +9,8 @@
     "aspect_ratio": "2.39:1",
     "color_space": "DCI-P3",
     "audio": "7.1.4 Dolby Atmos",
-    "narrative": "Conflict-Driven: Direction Born → Direction Drifts → Direction Guarded",
-    "visual": "T1 lens fog + T2 light beam division + freezing point sand curve + gold/dark red dual color + T11 stone triple intercut + T12 two TAs",
+    "narrative": "Conflict-Driven: Direction Born → Direction Drifts → Direction Guarded → Direction Answered (T12 title card: 涌现→方向)",
+    "visual": "T1 lens fog + T2 light beam division + full-screen emergence effects (T4/T6/T7/T10) + Gödel subtitle card (T9) + space orbit view (T11) + freezing point sand curve + gold/dark red dual color + T11 stone triple intercut + T12 two TAs",
     "sound": "Two types of silence + TA motif from pen tip to finger to rock",
     "palette": {
       "silicon_protocol": "#4A6B8A",
@@ -91,19 +91,20 @@
       "id": "gu_qing",
       "name": "顾清",
       "appearance": "T5",
-      "signature": "米白毛衣+提问的沉默"
+      "signature": "米白毛衣+提问的沉默+哲学话'没有矛盾的系统不是更完美,是不真实'(首次脸特写)"
     },
     {
       "id": "deep_blue",
       "name": "深蓝",
       "appearance": "T6/T10/T11",
-      "form": "晶壳(湿件载体)+屏幕文字+星图/像素云"
+      "form": "晶壳(湿件载体)+画面浮层光效文字(In-Frame Light Overlay)+星图/像素云",
+      "signature": "T6方向/测试感应/T11被唤醒+宁可慢一点+不跨"
     },
     {
       "id": "lin_yu",
       "name": "林屿",
-      "appearance": "T7/T10",
-      "signature": "灰卫衣+手环+悬停手指"
+      "appearance": "T7/T11",
+      "signature": "灰卫衣+手环+悬停手指+T11画外音宣告'判断力保做错后承担后果的能力'"
     },
     {
       "id": "ji_xing",
@@ -168,7 +169,7 @@
           "T6",
           "T11"
         ],
-        "function": "湿件物理载体—T1温度感先于视觉"
+        "function": "湿件物理载体—T1温度感先于视觉+T6三层结构可见(纳米电极)+T11呼吸微形变/减速"
       },
       {
         "id": "wetware_core",
@@ -322,7 +323,7 @@
       {
         "id": "deep_blue",
         "instruments": "电子合成器低频+钢琴",
-        "feeling": "从沉默到声音"
+        "feeling": "从沉默到被光包围（深蓝始终不出声，围绕它的光与声音在生长）"
       },
       {
         "id": "stone",
@@ -388,19 +389,19 @@
       "from": "T9",
       "to": "T10",
       "method": "切黑→暗红闪切→金色",
-      "note": "冰点独白后→暗红2s→蜂群金色"
+      "note": "哥德尔字幕卡+94.7%冰封独白后→暗红1.5s→蜂群金色"
     },
     {
       "from": "T10",
       "to": "T11",
       "method": "色彩溶解",
-      "note": "金色光点溶解成晶壳金色"
+      "note": "涌现全屏动效(金色光点汇成'涌现')→金色光点溶解成晶壳金色"
     },
     {
       "from": "T11",
       "to": "T12",
       "method": "切黑+寂静五秒",
-      "note": "音乐突然停止→极低频脉动五秒"
+      "note": "林屿画外音+太空俯瞰+深蓝减速后→音乐突然停止→极低频脉动五秒"
     },
     {
       "default": "切黑",

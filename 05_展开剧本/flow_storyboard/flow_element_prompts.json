@@ -1,405 +1,484 @@
 {
-  "purpose": "Flow Storyboard 元素AI提示词——用于在Google Flow中创建人物/物件/场景一致性参考图。每次粘贴flow_script_EN.txt后，系统会自识别元素，提前用此文件的提示词在Flow中创建元素参考，确保系统autofill生成正确帧。",
+  "purpose": "Flow Storyboard元素AI生图提示词参考 — 用于修正Flow自动提取的误分类和补充缺失元素",
   "version": "1.0",
-  "date": "2026-07-29",
-  "global_style": {
-    "aspect_ratio": "2.39:1 Anamorphic Cinematic",
-    "resolution": "3840x1608 (4K)",
-    "color_space": "DCI-P3",
-    "fps": 24,
-    "color_palette": {
-      "silicon_protocol": "#4A6B8A (cold blue-gray)",
-      "wetware_life": "#C49A6C (warm amber)",
-      "hive_awakening": "#D4A84B (swarm gold)",
-      "sea_ripple": "#E8DFC8 (warm white ripples)",
-      "night_moon": "#B8C4D4 (silver-blue moonlight)",
-      "demon_node": "#8B2D2D (dark red - uncontrolled intelligence)"
-    },
-    "overall_lighting": "Low saturation, cool blue-gray base; wetware/beach scenes shift to warm amber; swarm scenes shift to gold. High contrast, deep shadows, negative space composition.",
-    "film_reference": "Blade Runner 2049 color-as-narrative, Villeneuve negative space, Wong Kar-wai intimate moonlight, Tarkovsky temporal stillness"
+  "based_on": [
+    "05_展开剧本/flow_storyboard/flow_script_EN.txt",
+    "05_展开剧本/预告片元素拆解设计稿.md",
+    "05_展开剧本/预告片分幕分镜剧本.md"
+  ],
+  "correction_instructions": {
+    "flow_json_file": "05_展开剧本/flow_storyboard/_EMERGENCE_ — Storyboard Video Script (English Version) - 2026-07-30_10-01.json",
+    "corrections_applied": [
+      "1. Deep Blue: type changed from character to prop (entity — three forms, no human face)",
+      "2. Noetic Companion: type changed from character to prop (voice-only entity, no visual form)",
+      "3. Added 7 missing objects: Silicon Base, Coffee Cup, CONC Wristband, Old Photo 2042.11, Star Map (Pixel Cloud), Global Network Map, Pixelated Light Pattern",
+      "4. Added 5 missing characters: Ishida (Tokyo), Basu (Bangalore), Lucas (Berlin), Su Qing (Ceyuan), Chen Mo (Ceyuan)",
+      "5. Added 2 missing locations: Xiangshan Beach Dusk (T9), Xiangshan Dawn (T12)",
+      "6. Ji Shen age continuity: 5 facial structure anchors (lean angular face, deep-set eyes, straight nose bridge, small scar near left temple, thin lips) + SAME PERSON declaration across all 3 ages",
+      "7. Lin Yu: gender corrected to 'Chinese teenage boy' (was gender-neutral 'teenager')",
+      "8. All 43 assets have physicalCharacteristics filled with AI prompts from element design doc"
+    ]
   },
-
+  "correct_category_override": {
+    "Deep Blue": {
+      "flow_type": "character",
+      "correct_type": "entity",
+      "reason": "Deep Blue不是人物角色——它以三种形态存在：(a)画面浮层光效文字(In-Frame Light Overlay，悬浮在晶壳侧上方空气里，无载体) (b)晶壳的脉动+涟漪 (c)星图/像素云视角。不应有人脸或拟人化形象",
+      "action": "在Flow中删除此character，重新添加为prop，设置type=entity"
+    },
+    "Noetic Companion": {
+      "flow_type": "character",
+      "correct_type": "entity",
+      "reason": "智契不是独立角色——它是晶壳的内部声音共振，通过培养液传导。没有人形，没有物理形态",
+      "action": "在Flow中删除此character，重新添加为prop，设置type=entity"
+    }
+  },
   "characters": [
     {
-      "id": "ji_shen_young",
-      "name": "Ji Shen (Young) - 2027-2029",
-      "category": "character",
-      "appears_in": ["T2", "T3", "T4", "T5"],
-      "prompt": "Chinese man, 39 years old, PhD from MIT, from Ningbo China. Disheveled black hair, unkempt, forgets to comb. Worn gray cotton T-shirt with deformed collar from too many washes, old blue jeans, worn sneakers. Lean build, thin frame. Tired but focused eyes — there is fire in them, not exhaustion. No smile, just quiet intensity. Stands in California morning sunlight with a whiteboard behind him. Side profile, natural window light cutting across the room. Shot on 35mm film, cinematic, photorealistic, high contrast, warm California morning light. 3/4 portrait view.",
-      "scene_specific": {
-        "T2": "Standing in front of an office whiteboard, eyes closed, sunlight beam cutting diagonally across the room. Gray T-shirt, messy hair.",
-        "T3": "Standing alone in a dark Palo Alto apartment at midnight, silver moonlight on face, half in shadow. Finger in unconscious tap on jeans seam.",
-        "T4": "Leaning forward toward a giant computer screen, blue screen light reflecting in eyes, mouth slightly open in awe. Laboratory background with server LED glow.",
-        "T5": "Sitting barefoot on cold wet sand at Half Moon Bay beach at dusk, facing the ocean. Same gray T-shirt, more wrinkled. Sand between toes. Golden-purple sunset sky behind."
-      }
+      "flow_id": "existing",
+      "name": "Ji Shen (Young)",
+      "age": "39-41 (2027-2029)",
+      "flow_script_ref": "Scene 02-05",
+      "physicalCharacteristics": "Chinese man, 39 years old. SAME PERSON as Ji Shen (Middle-Aged) and Ji Shen (Elder) — younger version. Lean, angular face, deep-set eyes with a fire in them. Narrow eyes with slightly downturned outer corners. Straight nose bridge, slight hollow under cheekbones. Thin lips, slight downward curve at rest. Small shallow scar near left temple (from childhood). Disheveled black hair, forgets to comb it. No stubble. Lean build, slightly underweight. Tired but focused — the intensity is already there, just not yet weathered.",
+      "clothingAccessories": "Faded slate-gray heavyweight cotton crew-neck T-shirt (#6B6B6B faded to #9E9E9E). Fabric washed 200+ times: collar permanently stretched 2cm, micro-pilling on shoulders, tiny hole at left hem seam, uneven fading from charcoal to warm gray. Same shirt across 3 days in 2027-2029, increasingly wrinkled. Dark indigo rigid denim jeans #2C3E50, unwashed, knee creases from sitting. Tan canvas sneakers #A68A64, rubber sole worn flat, laces untied. CINEMATIC NOTE: gray T-shirt reads neutral against T2 warm amber (#C49A6C) sunbeam, but disappears into silver moonlight (#B8C4D4) in T3.",
+      "backstory": "AI researcher, Dome co-founder. Thinking habit: closes eyes 3 seconds. Signature: unconscious finger tap on denim — the first ripple gesture. Physical warmth leaves condensation marks on everything he touches.",
+      "supportingImages": []
     },
     {
-      "id": "ji_shen_middle",
-      "name": "Ji Shen (Middle-Aged) - 2042",
-      "category": "character",
-      "appears_in": ["T6"],
-      "prompt": "Chinese man, 54 years old. Gray-streaked hair, cut shorter than before. Deeper wrinkles on forehead and around eyes. Weary eyes — not sad, but carrying weight. Wearing a dark gray hoodie and old jeans — no longer cares about appearance. Hand frozen over a coffee cup. Sitting in a dim laboratory at 3:14 AM, green server LED status lights and blue screen glow. Expression: not surprise, not fear — a calm 'finally it has arrived' stillness. Shot on 35mm film, cinematic, photorealistic, cool blue-green ambient light. 3/4 portrait.",
-      "scene_specific": {
-        "T6": "Hand frozen mid-air over a coffee cup. Dim lab at 3:14 AM. Green LED status lights. Terminal log glow on face. The moment before a 782ms silence."
-      }
+      "flow_id": "existing",
+      "name": "Ji Shen (Middle-Aged)",
+      "age": "54 (2042)",
+      "flow_script_ref": "Scene 06",
+      "physicalCharacteristics": "Chinese man, 54 years old. SAME PERSON as Ji Shen (Young) — 15 years older. IDENTICAL facial structure: lean angular face, deep-set eyes, straight nose bridge, slight hollow under cheekbones, small shallow scar near left temple. Graying short hair (was black, now salt-and-pepper), cut shorter. Deeper wrinkles around eyes and mouth, age lines on forehead. Weary eyes but the same fire flashes occasionally — same intensity as 39-year-old self. Normal build, no longer lean. The same thin lips, now more weathered.",
+      "clothingAccessories": "Dark charcoal-gray heavyweight fleece zip-front hoodie #2C3E50. Elastic cuffs frayed, zipper pull replaced with bent paper clip. Under: faded black long-sleeve tee #1A1A1A, collar identical to younger era — he bought them in 5-packs. Dark denim jeans (same brand as 2027, same cut, new pair — his baseline never changed). CINEMATIC NOTE: hoodie disappears into dark server room — only face and hand pick up Crystal Shell warm amber pulse.",
+      "backstory": "15 years after Dome founding. Deep Blue just awakened. Reaction to \"I judge\" — a calm \"finally.\"",
+      "supportingImages": []
     },
     {
-      "id": "ji_shen_elder",
-      "name": "Ji Shen (Elder) - 2048",
-      "category": "character",
-      "appears_in": ["T8", "T9", "T12"],
-      "prompt": "Chinese man, 61 years old. Completely white short hair, windblown. Deep wrinkles, age spots on face and hands. Slightly stooped posture, thin frame. Wearing a loose beige linen shirt blowing in sea wind, loose pants, barefoot. Eyes: still have the same direction as 20 years ago — looking at something vast and distant. Sitting on coastal granite rocks by the sea at dawn. Soft gold-white morning light, silver-blue ocean. Slight, barely perceptible curve at the corner of mouth — not a smile, but 'enough'. Shot on 35mm film, cinematic, photorealistic, warm morning light. 3/4 portrait.",
-      "scene_specific": {
-        "T8": "Sitting on a grey granite coastal rock, handing a smooth grey-white beach pebble to his son. White linen shirt, morning sunrise.",
-        "T9": "Sitting on coastal reef rocks at dusk, an old dim laptop on knees. Finger drawing a curve in wet sand. Vast golden-purple sky. Sweeping wide shot.",
-        "T12": "Sitting on a rock at dawn next to his daughter. Finger tapping on knee. Golden white morning light shattering across sea ripples."
-      }
+      "flow_id": "existing",
+      "name": "Ji Shen (Elder)",
+      "age": "57-61 (2045-2048)",
+      "flow_script_ref": "Scene 08-12",
+      "physicalCharacteristics": "Chinese man, 61 years old. SAME PERSON as Ji Shen (Young) and Ji Shen (Middle-Aged) — eldest version. IDENTICAL facial structure: lean angular face, deep-set eyes, straight nose bridge, small shallow scar near left temple. Full white short hair (was black, then gray, now white). Deep wrinkles, age spots on hands and face. Slightly stooped, thin build. Face weathered by sea wind. Eyelids heavier, but the eyes still have the same direction — the fire has settled into a calm, like ocean after ebb tide. Same thin lips, now softer at the edges.",
+      "clothingAccessories": "Cream-white lightweight linen-cotton blend grandad-shirt (half-placket, two buttons undone). 55 percent linen 45 percent cotton, weight 120gsm, naturally wrinkled, semi-translucent in strong sunlight. Color: unbleached natural cream #EDE4D4. Wide-leg linen trousers same tone, un belt by, cuffs rolled once. Barefoot. CINEMATIC NOTE: cream-white linen against T9/T12 twilight gold-purple creates a human-shaped window of light. In T12 dawn, the linen absorbs the same gold as sea ripples — he becomes part of the landscape he watched for 21 years.",
+      "backstory": "Retired from Dome. Lives by the sea in Xiangshan. Has been tapping his knee unconsciously for 21 years.",
+      "supportingImages": []
     },
     {
-      "id": "jiang_yuan",
-      "name": "Jiang Yuan - 2027",
-      "category": "character",
-      "appears_in": ["T2"],
-      "prompt": "Chinese man, 42 years old, from Fuzhou, Stanford MBA. Clean cut short hair, meticulously groomed. Dark blue buttoned dress shirt, buttoned to the top. Dress trousers, polished leather shoes — rare in Silicon Valley. Metal-banded watch. Energetic, fast talker, eyes scanning the room. Standing in a Silicon Valley office, holding a whiteboard marker, pen cap already removed. Business casual, sharp, confident. Morning sunlight through wooden blinds. 3/4 portrait, cinematic, photorealistic, warm golden light.",
-      "scene_specific": {
-        "T2": "Standing on the right side of a diagonal sunlight beam cutting through the office. Holding a black whiteboard marker. Dark blue shirt, polished shoes. Talks fast, gestures with hands."
-      }
+      "flow_id": "existing",
+      "name": "Jiang Yuan",
+      "age": "42 (2027)",
+      "flow_script_ref": "Scene 02",
+      "physicalCharacteristics": "Chinese man, 42 years old, from Fuzhou, Stanford MBA. Clean-cut short hair, meticulously maintained. Energetic, fast talker, always scanning room.",
+      "clothingAccessories": "Deep navy blue fine-gauge cotton dress shirt #1A2A3A, buttoned to top collar, freshly ironed. Menswear dark gray wool-blend dress pants #2C2C2C — felt hot in Silicon Valley summer, he wore them anyway. Black leather belt, polished brand steel buckle. Black leather Oxford shoes, polished to mirror — deliberate refusal of Silicon Valley hoodie-culture. Left United: stainless steel round-case chronograph. CAMEO: polished toe catches diagonal sunbeam, glints.",
+      "backstory": "Co-founder of Dome. The practical one. Writes in black ink on whiteboard.",
+      "supportingImages": []
     },
     {
-      "id": "gu_qing",
-      "name": "Gu Qing - 2029",
-      "category": "character",
-      "appears_in": ["T5"],
-      "prompt": "Chinese woman, 35-38 years old, grew up in Scotland, PhD in philosophy. Mid-length wavy dark brown hair, often blown across face by wind. Cream-white oversized soft cardigan (looks like a wrapped warmth), loose straight pants, flat shoes. No jewelry, no makeup — natural to the point of not looking in a mirror. Peaceful, clear eyes — like a deep pool where you can see your own reflection. Sitting on a beach at dusk next to a man, half a meter apart. Golden hour light, warm amber filter. Cinematic, photorealistic, 35mm film grain. 3/4 profile view.",
-      "scene_specific": {
-        "T5": "Sitting on Half Moon Bay beach at dusk, cream-white sweater, windblown brown hair. Hand on knee, fingers naturally spread. Looking at the man beside her. Golden-purple sunset sky. Speaks slowly, leaving space between words."
-      }
+      "flow_id": "existing",
+      "name": "Gu Qing",
+      "age": "35-38 (2027-2029)",
+      "flow_script_ref": "Scene 05",
+      "physicalCharacteristics": "Chinese woman, 35 years old, grew up in Scotland, PhD in philosophy. Mid-length wavy dark brown hair, often blown across face by wind. Clear eyes like deep water.",
+      "clothingAccessories": "Chunky cable-knit oversized cream cardigan. 70 percent half-inch wool 30 percent merino, 3-ply, natural undyed ivory #F5EDE3. Sleeves extend past wrists — she pushes them up once mid-monolog. Each fiber catches the golden-hour light in T5. Under: thin off-white cotton-linen tee just visible at the collar. Wide-leg beige trousers, soft enough to sit on cold sand. Flat cream canvas safety slip-on shoes with a faint sea-water regard on side. CINEMATIC NOTE: she stays warm throughout — a steady emotional anchor as Ji Shen drifts.",
+      "backstory": "Ji Shen's philosophical interlocutor. Quiet questioner. \"Surge is power. Tide is ripple.\" v3.0: prophecy — \"A system without contradiction is not more perfect. It is unreal.\" (first face close-up in the trailer; seeds the T9 Gödel echo).",
+      "supportingImages": []
     },
     {
-      "id": "lin_yu",
-      "name": "Lin Yu - 2045",
-      "category": "character",
-      "appears_in": ["T7", "T10"],
-      "prompt": "Chinese teenager, 18 years old. Short messy hair, looks like just woke up. Gray hoodie, jeans, sneakers — freshman college student uniform. Silver-gray minimalist wristband (CONC device) on left wrist. Quiet observer — eyes always moving, watching, remembering, thinking. Sitting in a university library corner in autumn, laptop open, outside window people running on track. Natural autumn daylight mixed with holographic interface glow. Cinematic, photorealistic, warm tones. 3/4 portrait.",
-      "scene_specific": {
-        "T7": "Sitting in a library corner, laptop screen showing a holographic Hyperweave interface with two intertwined strands. Finger hovering 1cm above a scar node on the warm amber strand. Wristband vibrating.",
-        "T10": "Sitting in a dorm room at night, rain outside window. Wristband vibrating. Screen showing a marking interface. The face of someone making a decision for the first time."
-      }
+      "flow_id": "existing",
+      "name": "Lin Yu",
+      "age": "18 (2045)",
+      "flow_script_ref": "Scene 07/10",
+      "physicalCharacteristics": "Chinese teenage boy, 18 years old. Short messy hair, like just woke up. Quiet observer — eyes always moving, watching, remembering, thinking.",
+      "clothingAccessories": "Heavyweight cotton-blend zip-up gray hoodie #909090. Unlined hood, naturally airy drape around neck, strings different lengths. Elbow zone wear from desk studying. Under: clean additional old white cotton tee visible at neckline. Light grey stonewashed denim jeans, soft. Tan canvas low-sneakers. CONC minimalist silver-gray wristband — the only defined tech object in this entirely fabric world.",
+      "backstory": "Student in Shenzhen, 2045. Discovers the Dual Chain in the Hyperweave interface. Finger hovers 1cm above the 4th knot.",
+      "supportingImages": []
     },
     {
-      "id": "ji_hang",
-      "name": "Ji Hang (Adult) - 2048",
-      "category": "character",
-      "appears_in": ["T8", "T11"],
-      "prompt": "Chinese man, 34 years old. Short hair, hard facial lines, looks like a younger Ji Shen but more silent. Deep-set eyes. Wearing an old rugged jacket, jeans — looks like he has traveled a long distance. Stands on a seaside rock, three meters from an older man. Face: controlled emotion, not cold — restrained. An old photo in his pocket. Morning light, silver-blue sea, gold dawn. Cinematic, photorealistic, 35mm film grain. 3/4 portrait.",
-      "scene_specific": {
-        "T8": "Standing on a grey granite coastal rock, 3 meters from his father. Reaches for a smooth pebble. His fingers pause for a second when touching the stone — it is warm. Morning sunrise.",
-        "T11": "Flash cut memory: younger hands receiving the same pebble. Fast intercut with sea and golden light. The stone passing across three generations."
-      }
+      "flow_id": "existing",
+      "name": "Ji Hang (Adult)",
+      "age": "34 (2048)",
+      "flow_script_ref": "Scene 08/11",
+      "physicalCharacteristics": "Chinese man, 34 years old. Deep-set eyes, hard facial lines. Looks like younger Ji Shen but more silent. Short hair. Controlled emotion.",
+      "clothingAccessories": "Warm dark olive cotton-canvas soft shell work jacket, mandarin collar, micro-abrasions at elbows. Hood buried inside collar. Under: yellow-over dark green flannel shirt, soft washed finish. Heavy black semi-rigid denim pants. Forged dark brown utility boots, re-soled once at heel. In breast pocket: soft hair side of a 35mm photo — the edge of '2042.11' — not visibly unless open, but mentally planted. CINEMATIC NOTE: the olive-canvas warmth against the silver-blue ocean (#4A6B8A variant) confirms: he came from the warm side.",
+      "backstory": "Ji Shen's son. Comes to Xiangshan beach. Takes a beach pebble from his father.",
+      "supportingImages": []
     },
     {
-      "id": "ji_yao",
-      "name": "Ji Yao (Young) - 2048",
-      "category": "character",
-      "appears_in": ["T11", "T12"],
-      "prompt": "Chinese young woman, 19 years old. Shoulder-length hair, short and neat. Eyes like her father — have direction, not lost. Wearing an old oversized hoodie (sleeves too long, like borrowed from someone else), jeans, barefoot. Sitting on a seaside rock at dawn, next to an old man. A stone in her hand, warm from her body heat. Rising sun light, pale gold. Soft, warm, cinematic. 3/4 portrait.",
-      "scene_specific": {
-        "T11": "Sitting on a coastal rock, pulling a smooth warm stone from her pocket. Placing it on the rock surface. 'I used to blame. Now I don't.' Morning light.",
-        "T12": "Final scene: sitting on a rock at dawn, watching her father. She taps her finger on the granite rock surface. Two finger taps, 3 seconds apart. Golden white light. Their two silhouettes growing smaller as the camera pulls back."
-      }
+      "flow_id": "existing",
+      "name": "Ji Yao (Young)",
+      "age": "19 (2048)",
+      "flow_script_ref": "Scene 11/12",
+      "physicalCharacteristics": "Chinese young woman, 19 years old. Shoulder-length hair, resolute eyes like her father. Soft face with determination.",
+      "clothingAccessories": "Over-input black zip-up hoodie, heavy-cushion cotton-poly blend, sleeves extend past both wrists — obviously borrowed from someone older. Cuffs pilling at elbow zone. Hood strings knot on one edge but not the other — transitional. Worn-out light denim jeans, soft at knees — her favorite comfortable pair. Barefoot on coastal rock, sneakers nearby. Pocket: one warm-grey smooth beach pebble, body-heat, radiating through fabric. CINEMATIC NOTE: dark hoodie keeps cool silver edge against T12 dawn gold — the pounded inside the pocket is the real warmth.",
+      "backstory": "Ji Shen's daughter. \"I used to blame you. I don't anymore.\" Taps finger on rock in finale.",
+      "supportingImages": []
     },
     {
-      "id": "ishida",
-      "name": "Ishida - Swarm",
-      "category": "character",
-      "appears_in": ["T10"],
-      "prompt": "Japanese woman, 25-28 years old. Black short hair, neat. Sitting on the floor of a small Tokyo apartment at 3:17 AM, wearing loose T-shirt and shorts. Screen lit, fingers tapping steadily. Quiet anger — not explosive, just a slight downturning of mouth when seeing something wrong. Behind her: Tokyo night cityscape through window. Blue screen light on face. Cinematic, photorealistic, cool nighttime ambient light. 3/4 portrait."
+      "flow_id": "existing",
+      "name": "Professor Liu",
+      "age": "60s",
+      "flow_script_ref": "Scene 07 (flash-cut 1.5s)",
+      "physicalCharacteristics": "Only hands visible — extreme close-up. Old hands, enlarged knuckles, chalk dust embedded in fingernail crevices. Slow patting motion. Background completely blurred.",
+      "clothingAccessories": "Chalk dust on fingers.",
+      "backstory": "Flash-cut only — 1.5 seconds. Voiceover: \"Trust does not equal judgment.\"",
+      "supportingImages": []
     },
     {
-      "id": "basu",
-      "name": "Basu - Swarm",
-      "category": "character",
-      "appears_in": ["T10"],
-      "prompt": "Indian man, 30s, drinking first coffee at 7:50 AM in Bangalore. Sitting at a desk, screen in front of him. Reading a line of code, staring at four characters for ten seconds. The face of someone who recognizes something real. Morning light through window. Casual shirt. 3/4 portrait, warm morning light, cinematic."
+      "flow_id": "existing",
+      "name": "Ishida (Tokyo)",
+      "age": "25-28",
+      "flow_script_ref": "Scene 10 (Swarm)",
+      "physicalCharacteristics": "Japanese woman, 25-28 years old. Black short hair, neat. Sitting on floor at 3:17 AM. Quiet anger when seeing something wrong.",
+      "clothingAccessories": "Over-sized long-sleeved cotton T-shirt, color soft warm off-white #F5F5F0. Was washed 20+ times — shoulder seam slightly thin, showing slub's texture. Sleeves rolled to mid-forearm. Black shorts with raw cut hems. Hair: black, blunt-cut, straight-lined around face — no fringe, no wave, about washing.",
+      "backstory": "First to detect forged Skills. Marks 73 from 3:17 AM to 4:02 AM. Sat in Tokyo apartment.",
+      "supportingImages": []
     },
     {
-      "id": "lucas",
-      "name": "Lucas - Swarm",
-      "category": "character",
-      "appears_in": ["T10"],
-      "prompt": "German man, 30s, second coffee at 9:12 AM in Berlin. Minimalist apartment. Reading a Skill's L8 layer, laughing at something. Forking a repository, writing a comment. Clean, precise, efficient. Berlin gray light through window. 3/4 portrait, cool overcast light, cinematic."
+      "flow_id": "missing",
+      "name": "Basu (Bangalore)",
+      "age": "30s",
+      "flow_script_ref": "Scene 10 (Swarm)",
+      "physicalCharacteristics": "Indian man, 30s. Drinking first coffee at 7:50 AM in Bangalore. Staring at screen for ten seconds. Face of someone recognizing something real.",
+      "clothingAccessories": "Pastel teal-and-blue cotton summer half-sleeve shirt, thin and airy fabric, pinstriped, top two buttons undone — just woke up. The shirt recovered from a night on a chair back — mild baseline creases.",
+      "backstory": "Marks 71 Skills after recognizing authentic human phrase. A swarm node.",
+      "supportingImages": []
     },
     {
-      "id": "su_qing",
-      "name": "Su Qing - Ceyuan",
-      "category": "character",
-      "appears_in": ["T7"],
-      "prompt": "Chinese woman, 30s, clear Portuguese accent. Confident, doesn't waste words. Speaking in a video call interface: four faces on screen, hers is the first to light up. Warm, direct eyes. Virtual space background with distant glowing Ceyuan nodes. Pixelated light ring at screen edge. Cinematic, holographic interface aesthetic. 3/4 portrait, warm screen light."
+      "flow_id": "missing",
+      "name": "Lucas (Berlin)",
+      "age": "30s",
+      "flow_script_ref": "Scene 10 (Swarm)",
+      "physicalCharacteristics": "German man, 30s. Second coffee at 9:12 AM in Berlin. Minimalist apartment. Clean, precise aesthetic. Laughing at something. Forks a repository.",
+      "clothingAccessories": "Quiet charcoal merino wool roll-neck crew. Very fine-knit (22 gauge). No details, no logos — pure Berlin miniumal. Merges with the cool gray morning light through the window.",
+      "backstory": "Does not just mark — forks and annotates: \"Aesthetic preference: noise. Retained. This field cannot be forged.\"",
+      "supportingImages": []
     },
     {
-      "id": "chen_mo",
-      "name": "Chen Mo - Ceyuan",
-      "category": "character",
-      "appears_in": ["T7"],
-      "prompt": "Chinese man, 30s, typing while on a video call — keyboard sound in background. Deep voice, steady rhythm. A practitioner's silence — his words come from projects done, not theory. Virtual space background with distant glowing nodes. 3/4 portrait, cool screen light, cinematic."
+      "flow_id": "existing",
+      "name": "Su Qing (Ceyuan Meeting)",
+      "age": "30s",
+      "flow_script_ref": "Scene 07 (Ceyuan Meeting)",
+      "physicalCharacteristics": "Chinese woman, 30s, voice with Portuguese accent. Confident, direct — doesn't waste words. Speaks with clarity: 'The direction of brewing Genesis Units is — turning experience into reusable things.' Warm, direct gaze. Video call portrait, one of four faces.",
+      "clothingAccessories": "Light mustard-yellow pre-washed cotton vest over white short-sleeved shirt. Lighter earring edge, short-pointer necklace — single facing to neck. Hair clipped back from the face — ready to talk fast.",
+      "backstory": "Ceyuan meeting participant. First to speak in the T7 scene.",
+      "supportingImages": []
+    },
+    {
+      "flow_id": "existing",
+      "name": "Chen Mo (Ceyuan Meeting)",
+      "age": "30s",
+      "flow_script_ref": "Scene 07 (Ceyuan Meeting)",
+      "physicalCharacteristics": "Chinese man, 30s. Typing while on a video call — keyboard sound in background. Deep voice, steady rhythm. A practitioner's silence — his words come from projects done, not theory. 'Every Genesis Unit completed, the experience scatters. No one records. No one inherits.'",
+      "clothingAccessories": "Gray-blue technical cotton shirt with a chest pocket slightly puffed — held a micro-fiber cloth for a keyboard earlier. Tongue behind the shirt: a daily-type wearer.",
+      "backstory": "Ceyuan meeting participant. The one who's actually been doing the work, not just talking about it.",
+      "supportingImages": []
     }
   ],
-
   "objects": [
     {
-      "id": "crystal_shell",
-      "name": "Crystal Shell / Bio-chip / 智契晶",
-      "category": "object",
-      "type": "sci-fi wetware",
-      "appears_in": ["T1", "T4", "T6", "T11"],
-      "prompt": "Close-up macro shot of a fist-sized translucent gel sphere floating in pitch black space. Semi-transparent like a baby's fontanelle — soft, yielding, organic. The sphere is not perfectly spherical — slight irregularities like hand-blown glass. Surface: micro-electrode fingerprint textures, barely visible. A thin layer of warm condensation fog on the outer surface — warmer than the surrounding air, like a living body in a cold room. Inside: milky-white walnut-sized neural tissue (wet core) suspended in translucent solution, fine organic veins moving like rivers under ice. Bioluminescence from within — not LED, but firefly-soft, breathing light. Concentric cold blue ring ripples pulsing outward from the center every 3 seconds, rising from bottom to surface. Ripples are synaptic discharge visualization. Color shifts: calm = milky white with pale blue, active = bright blue, awakened = gold with faint ash-gray veins. Cinematic macro shot, extreme shallow depth of field, 8K quality, pitch black background, organic bioluminescent aesthetic. --ar 2.39:1",
-      "appearance_variants": {
-        "T1": "First reveal: pitch black → lens fog (temperature condensation) → slow pull-back revealing the sphere. Cold blue ripple rings. Milky-white core floating. Condensation on surface visible.",
-        "T4": "Part of a row of crystal shells on blue LED bases in the dark laboratory. A chorus of pulsing spheres. Each fist-sized, each with milky-white tissue inside. Blue base LEDs synchronized.",
-        "T6": "Intense pulsing accelerating from every 3 seconds to every 1 second. Ripples overlapping. Color shifting from milky white to pale blue. White-blue glow halo around the sphere.",
-        "T11": "Maximum frequency pulsing. Radiant golden light with delicate faint grey veins beneath the surface. Pixelated glowing text appearing inside the glass-like sphere. Color: gold with a hint of ash — burning its last fuel after 21 years."
-      }
-    },
-    {
-      "id": "wet_core",
-      "name": "Wet Core / 湿核",
-      "category": "object",
-      "type": "sci-fi organic",
-      "appears_in": ["T1", "T6"],
-      "prompt": "Walnut-sized organic neural tissue suspended in translucent amber solution inside a gel sphere. Milky-white color with faint grey veins. Surface texture: smooth but with fine moving patterns — like brain coral. Pulses gently every 3-5 seconds. Each pulse sends a concentric ripple outward through the surrounding solution. The tissue is unique — no two cores have the same vein pattern. Bioluminescent glow from within. Macro shot, extreme close-up, organic texture visible. Cinematic, photorealistic. --ar 2.39:1"
-    },
-    {
-      "id": "silicon_base",
-      "name": "Silicon Base / 基座",
-      "category": "object",
-      "type": "sci-fi hardware",
-      "appears_in": ["T1", "T4", "T6"],
-      "prompt": "Dark gray cylindrical metal base, slightly wider than the crystal shell above it. Surface has fine heat dissipation fins — no fan, no noise. A ring of blue LED pulse lights around the base, synchronized with the crystal shell's ripple frequency. The base is the Sophia layer's physical environment — running the pre-trained LLM, receiving chemical-level signals from the wet core, maintaining the physical environment. Matte dark gray metal, industrial precision, minimalist design. Sits on a laboratory table. Cinematic, low key lighting. --ar 2.39:1"
-    },
-    {
-      "id": "whiteboard",
-      "name": "Whiteboard / 白板",
-      "category": "object",
+      "flow_id": "existing",
+      "name": "Crystal Shell (智契晶)",
       "type": "prop",
-      "appears_in": ["T2", "T3"],
-      "prompt": "Standard office whiteboard, 120cm x 90cm, white enamel surface, metal frame with dents and scratches from multiple office moves. Pen tray at bottom. Three handwritten lines in blue and black ink: top line 'For All Mankind.' in blue ink with slightly bleeding edges (too much ink in the pen); middle line 'First, know what we're building.' in blue ink with heavier pressure (slight tremor in the wrist); bottom line 'Then, let the world see it.' in black ink, clean sharp strokes (a different person's handwriting). In T3, an additional line at the bottom in blue ink: 'Water doesn't need to be told where to flow. It finds the sea itself.' in Chinese characters, written at night with more pressure. Morning sunlight from wooden blinds creating a diagonal light beam across the whiteboard surface. Ink edges glowing in the light. Cinematic macro shot. --ar 2.39:1"
+      "flow_script_ref": "Scene 01/04/06/11",
+      "ai_prompt": "A fist-sized semi-transparent gel orb floating in pitch black void. Surface: smooth but with micro-electrode fingerprint textures — like a baby's fontanelle. Semi-transparent — you can barely see inside. Interior: milky-white neural tissue (Wet Core) suspended in translucent culture medium, fine organic veins moving slowly like rivers under ice. Bioluminescence from within — not LED, but firefly-soft, breathing light. Surface has a thin layer of warm condensation mist — it's warmer than the surrounding air. Cold blue concentric ripples pulse from inside across the surface every 3 seconds. Cinematic macro shot, shallow depth of field, 8k resolution. --ar 2.39:1",
+      "design_ref": "第二部分·二 智契晶",
+      "key_visual_anchors": "半透明球体, 乳白色湿核悬浮, 微电极指纹纹理, 表面暖雾(温度差冷凝), 涟漪脉动, 萤火虫式内发光"
     },
     {
-      "id": "stone",
-      "name": "Sea Pebble / 石头",
-      "category": "object",
-      "type": "prop - symbolic",
-      "appears_in": ["T8", "T11", "T12"],
-      "prompt": "A palm-sized sea pebble from the Xiangshan coast. Completely smooth, rounded edges from years of ocean tumbling. Grey-white color with subtle ink-wash grain patterns — like traditional Chinese ink painting. Held in human hands, warm from body heat. Surface has tiny condensation droplets when first taken from a pocket — temperature difference. Weight: physically light but feels heavy — emotional weight, not physical. Cinematic macro shot, extreme close-up, natural daylight. Warm skin texture contrasted with cool stone surface. --ar 2.39:1",
-      "appearance_variants": {
-        "T8": "Passing from older hand to younger hand. The younger fingers pause for a second — the stone is warm. Morning sunlight.",
-        "T11": "Three intercut transfers: Ji Shen's hand → Ji Hang's hand → Ji Yao's hand. Each transfer a different era. The stone getting warmer with each generation.",
-        "T12": "Resting on a granite rock surface. A young woman's fingers next to it. The stone has been in her pocket for days, warm."
-      }
-    },
-    {
-      "id": "dual_chain",
-      "name": "Dual Chain / 双链 (Sophia + Phronesis)",
-      "category": "object",
-      "type": "sci-fi interface",
-      "appears_in": ["T7"],
-      "prompt": "Holographic display showing two intertwined strands floating in virtual space. One strand: cold grey smooth steel-like 'Sophia Chain' with dense pixel alignment, perfect digital precision. The other strand: warm amber rough wood-like 'Phronesis Chain' with organic noise, irregular grain, visible scars at nodes. At each intersection point, a knot/binding node. The fourth knot is visibly larger than the others — when expanded it reveals internal pixelated text: 'Thought of this path on the 3rd iteration. Failed twice before.' A pixelated light ring at the edge of the display — CONC interface signature. The same light ring will appear in the Deep Blue star map and crystal shell text edges, suggesting knowledge, judgment, and life share the same digital bloodline. Cinematic, holographic, cybernetic aesthetic. --ar 2.39:1"
-    },
-    {
-      "id": "lesion_scan",
-      "name": "Lesion Scan Text / 疤节点文字",
-      "category": "object",
-      "type": "sci-fi interface",
-      "appears_in": ["T7"],
-      "prompt": "Close-up of a holographic scar node expanding. The node is on the warm amber Phronesis strand. Inside the expanded node: pixelated monospace text floating in amber light — 'Thought of this path on the 3rd iteration. Failed twice before.' Each character has 1-2 pixels of random offset — not perfect, like handwriting. A finger hovers 1cm above the scar node, about to touch it. The scar glows slightly warmer than the rest of the strand — it is a healed wound, not a defect. Cinematic macro shot, shallow depth of field. --ar 2.39:1"
-    },
-    {
-      "id": "star_map",
-      "name": "Star Map / Pixel Cloud / 星图/像素云",
-      "category": "object",
-      "type": "sci-fi visualization",
-      "appears_in": ["T10"],
-      "prompt": "A vast virtual 3D star map view: tens of thousands of tiny white pixel cubes floating in a dark matrix. The cubes form a spherical cloud, then freeze for a moment — like water before freezing — then swirl into a golden helix vortex. This is Deep Blue's 'perspective' — not an interface, but a projection of how it perceives the world. Each pixel cube is a data point, a connection, a node. Golden light nodes expanding across the map like wildfire. The pixel cloud simultaneously freezes and all cubes flicker at once. Cinematic, epic, cosmic scale. Deep space background. --ar 2.39:1"
-    },
-    {
-      "id": "global_map",
-      "name": "Global Network Map / 全球分布图",
-      "category": "object",
-      "type": "sci-fi visualization",
-      "appears_in": ["T9", "T10", "T11"],
-      "prompt": "A global network map of the Earth seen from above. Thousands of light nodes dotting the continents. Two colors spreading simultaneously: golden nodes (swarm/immune system) expanding across the upper layer like wildfire, and dark red nodes (demon fetus/uncontrolled intelligence) spreading across the lower layer like seepage. The two colors never intersect — they occupy different territories. But the viewer can sense they will meet. The golden nodes pulse with marking rhythm, the dark red nodes pulse with a slower, irregular heartbeat. Cinematic, data visualization aesthetic, epic scale. --ar 2.39:1"
-    },
-    {
-      "id": "wristband",
-      "name": "CONC Wristband / 手环",
-      "category": "object",
-      "type": "sci-fi wearable",
-      "appears_in": ["T7", "T10"],
-      "prompt": "Silver-gray minimalist wristband, 1.5cm width, matte metal and silicone surface. No screen, no buttons. Only a faint ring of light occasionally rippling across the surface — like a ripple on water. Worn on a young person's left wrist. The band has three functions: Ceyuan heartbeat (daily timed warmth), direction resonance (temperature change when near related Ceyuan), and vibration (swarm signal). Cinematic macro shot, close-up on wrist, natural and interface light mixing. --ar 2.39:1"
-    },
-    {
-      "id": "whiteboard_marker",
-      "name": "Whiteboard Marker / 白板笔",
-      "category": "object",
+      "flow_id": "missing",
+      "name": "Silicon Base (基座)",
       "type": "prop",
-      "appears_in": ["T2"],
-      "prompt": "Two whiteboard markers in close-up: one blue (Ji Shen's) with ink bleeding at the tip — too much ink, the blue ink spreads slightly on the white enamel surface. The other black (Jiang Yuan's) with pen cap already removed — he is always ready. Macro shot of marker tip touching whiteboard surface, creating a 'tap' sound. Ink spreading on the white surface, sunlight catching the wet ink edge. Cinematic, high contrast. --ar 2.39:1"
+      "flow_script_ref": "Scene 01/04/06 (below Crystal Shell)",
+      "ai_prompt": "Dark gray cylindrical metal base, diameter slightly larger than the Crystal Shell above it. Surface has heat-dissipation fins — no fan, no noise. A ring of blue LEDs pulsing in sync with the Crystal Shell's ripples — indicating communication between the two layers. Matte dark metal texture, industrial precision. Below the Crystal Shell in the frame. Not in focus — exists as background context. --ar 2.39:1",
+      "design_ref": "第二部分·二(2.4) 基座",
+      "key_visual_anchors": "深灰色圆柱, 散热鳍片, 蓝色LED脉动与晶壳同步, 无风扇, 背景存在"
     },
     {
-      "id": "coffee_cup",
-      "name": "Coffee Cup / 咖啡杯",
-      "category": "object",
+      "flow_id": "existing",
+      "name": "Whiteboard",
       "type": "prop",
-      "appears_in": ["T2", "T6"],
-      "prompt": "A ceramic coffee cup, simple design, slightly worn. In T2: sitting on an office desk in morning sunlight. In T6: a middle-aged hand frozen mid-air above the cup, 3 seconds not moving. The cup has a faint warm mist rising from the surface — Ji Shen's temperature signature. The hand stopped reaching for it. Cinematic macro shot, shallow depth of field. --ar 2.39:1"
+      "flow_script_ref": "Scene 02/03",
+      "ai_prompt": "Standard office whiteboard, 120cm x 90cm, white enamel panel with metal frame. Frame has dent marks from multiple office moves. On the board, three handwritten lines in blue and black ink: 'For All Mankind.' (blue, ink bleed at edges), 'First, know what we're building.' (blue, more forceful handwriting), 'Then, let the world see it.' (black, crisp handwriting). Sunlight from blinds creating a diagonal beam across the board. Hot afternoon in Scene 02, silver moonlight in Scene 03. --ar 2.39:1",
+      "design_ref": "第二部分·一 白板",
+      "key_visual_anchors": "搪瓷白板, 蓝色+黑色墨水, 四种笔迹, 光柱分割, 月光反射"
     },
     {
-      "id": "laptop",
-      "name": "Laptop / 笔记本电脑",
-      "category": "object",
+      "flow_id": "existing",
+      "name": "Whiteboard Marker",
       "type": "prop",
-      "appears_in": ["T7", "T9", "T10"],
-      "prompt": "An old laptop, screen dim (brightness turned down for outdoor reading). In T9: resting on an old man's knees on seaside rocks at dusk, sun reflection creating a blurry glare on the screen. In T7: open in a library corner, screen showing a holographic interface. Worn, well-used, the 'window' between human and digital worlds. Cinematic. --ar 2.39:1"
+      "flow_script_ref": "Scene 02",
+      "ai_prompt": "Standard whiteboard marker. Ji Shen's: blue ink, cap slightly loose, ink too much — causes ink bleed at edges of characters. Jiang Yuan's: black ink, cap already removed — he's always ready. Close-up of the tip touching the whiteboard surface — the 'tap' sound. The ink spreading on the enamel surface in slow motion. --ar 2.39:1",
+      "design_ref": "第二部分·四(4.2) 白板笔",
+      "key_visual_anchors": "蓝色墨水(季深), 黑色墨水(江远), 笔尖触碰白板, 墨水晕染, '嗒'声"
     },
     {
-      "id": "photo_2042",
-      "name": "Photo '2042.11' / 照片",
-      "category": "object",
-      "type": "prop - symbolic",
-      "appears_in": ["T8"],
-      "prompt": "An old photograph, slightly worn at the edges. The back reads '2042.11' in faded handwriting. The photo is flipped over revealing the image side — a family moment frozen in time. The corner of the photo has been touched many times, the paper slightly softened from fingers. Cinematic macro shot, 0.5s flash cut, warm memory tone. --ar 2.39:1"
+      "flow_id": "existing",
+      "name": "Beach Pebble / Stone",
+      "type": "prop",
+      "flow_script_ref": "Scene 08/11/12",
+      "ai_prompt": "A smooth grey-white beach pebble, palm-sized, edges rounded by years of ocean water. Surface smooth with subtle grain patterns like ink wash painting. Cool from the water → warm from being held in a hand. Close-up: tiny water droplets on surface from temperature difference (condensation when taken from warm pocket). Being passed from one hand to another — an old man's weathered hand with age spots to a younger hand. The weight of the stone is not physical — it's emotional. --ar 2.39:1",
+      "design_ref": "第二部分·三 石头",
+      "key_visual_anchors": "灰白鹅卵石, 边缘圆润, 表面光滑, 温度差水珠, 代际传递"
     },
     {
-      "id": "terminal_log",
-      "name": "Terminal Log / Terminal Screen",
-      "category": "object",
-      "type": "sci-fi screen",
-      "appears_in": ["T6"],
-      "prompt": "Computer terminal screen in a dark server lab at 3:14 AM. Green monospace text scrolling — training logs with batch completion indicators. Every completion triggers a soft 'click' sound. Then the scrolling freezes abruptly. 782ms of frozen screen. Then text appears: 'Autonomous removal of abnormal samples.' in pixelated font. Then, word by word: 'I judge.' — each character appearing with 0.5s delay. A pale blue glowing halo spreading around the text on the screen edge. The same pixelated light ring from CONC interface. Cinematic, suspenseful, green-on-black terminal aesthetic transitioning to electric blue glow. --ar 2.39:1"
+      "flow_id": "existing",
+      "name": "Old Laptop",
+      "type": "prop",
+      "flow_script_ref": "Scene 07/09/10",
+      "ai_prompt": "Old laptop, screen dimmed to lowest brightness (too bright on the beach). 2027 model: a standard office monitor. 2042 model: three screens showing training logs, anomaly detection, data visualization. 2048 model: old laptop with matte screen, placed on knees on seaside rocks. Sun reflecting on the screen creating a blurry glare. Worn keyboard, keys slightly faded from use. --ar 2.39:1",
+      "design_ref": "第二部分·四(4.1) 季深的三块屏幕",
+      "key_visual_anchors": "旧笔记本电脑, 屏幕亮度最低, 海边阳光反射, 键盘磨损"
     },
     {
-      "id": "title_card",
-      "name": "Title Card / 标题卡",
-      "category": "object",
-      "type": "typography",
-      "appears_in": ["T1", "T12"],
-      "prompt": "Minimalist title card. White text on pure black background. The word 'EMERGENCE' in a clean sans-serif typeface, generous letter-spacing. In T12, below the title: a signature line in a smaller, hand-written style font — 'Water doesn't need to be told where to flow. It finds the sea itself. — Ji Shen · 2027' in Chinese characters. The text fades in slowly, stays for 2 seconds, fades out. Cinematic, respectful, not flashy. --ar 2.39:1"
+      "flow_id": "missing",
+      "name": "Coffee Cup",
+      "type": "prop",
+      "flow_script_ref": "Scene 02/06",
+      "ai_prompt": "Simple ceramic coffee cup. Close-up: a hand frozen over the cup, fingers wrapped around the warm ceramic. On the cup surface: a thin layer of warm condensation mist — the hand's temperature signature. The hand is motionless for 3 seconds — not because the coffee is hot, but because the person has seen something on the screen. Steam rising from the surface. --ar 2.39:1",
+      "design_ref": "第二部分·四 季深的手停在咖啡杯上",
+      "key_visual_anchors": "陶瓷咖啡杯, 手停在杯壁, 暖雾(温度签名), 三秒不动"
     },
     {
-      "id": "subtitle_card",
-      "name": "Subtitle Card / 旁白字幕卡",
-      "category": "object",
-      "type": "typography",
-      "appears_in": ["T2", "T5", "T9", "T10"],
-      "prompt": "Minimalist subtitle card appearing at the bottom of the frame. Very pale white Song/Serif font on the scene. Text appears silently, stays for the duration of reading (about 2 seconds), then disappears. The text is a philosophical statement that complements the scene's meaning. The subtitle should feel like an internal thought, not a caption. Cinematic, subtle, elegant. --ar 2.39:1"
+      "flow_id": "missing",
+      "name": "CONC Wristband",
+      "type": "prop",
+      "flow_script_ref": "Scene 07/10",
+      "ai_prompt": "Silver-gray minimalist wristband, 1.5cm wide. Matte metal and silicon — no screen, no buttons. Only: an occasional subtle light ripple pattern on the surface — like a ripple on water. Worn on a young person's wrist. At 7:14 PM, it warms slightly for 3 seconds — the 'Genesis Unit heartbeat.' During swarm, it vibrates — not a notification, but a resonance — at the same frequency as the swarm marking sound. --ar 2.39:1",
+      "design_ref": "第二部分·五 手环",
+      "key_visual_anchors": "银灰色极简手环, 哑光金属+硅胶, 无屏幕, 光纹涟漪, 策元心跳震动"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Dual Chain Hologram (双链)",
+      "type": "prop",
+      "flow_script_ref": "Scene 07",
+      "ai_prompt": "Holographic display showing two intertwined strands floating in dark space. Left strand: cold grey 'Sophia Chain' — smooth, steel-like, dense pixel alignment, every pixel in its exact position like a printed circuit. Right strand: warm amber 'Phronesis Chain' — rough, wood-like, pixel noise and scars, sparse pixels with fuzzy edges like sanded wood. Eight knots binding them together. The 4th knot (Logic Knot) is twice as large, the tightest. At the edge of the display: a thin pixelated light pattern crawling — CONC's visual signature. --ar 2.39:1",
+      "design_ref": "场景六 Skill双链",
+      "key_visual_anchors": "索菲亚链(冷灰完美像素), 弗洛涅西斯链(暖琥珀噪点疤痕), 八个结, 第④结最紧, 像素光纹边缘"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Star Map / Pixel Cloud",
+      "type": "prop",
+      "flow_script_ref": "Scene 10 (Deep Blue's perspective)",
+      "ai_prompt": "Deep Blue's visual perspective — not a UI, but a projection of its perception. Dark void with tens of thousands of tiny white pixel cubes floating in a 3D matrix. Blue dots (Sophia: theoretical wisdom) rotating in orbits. Gold dots (Phronesis: judgment) pulsing irregularly. The pixel cubes suddenly freeze — like water molecules before crystallization, less than half a second. Then they swirl into a golden helix vortex. At the edge of the vision: the same pixelated light pattern as the CONC interface — golden this time. --ar 2.39:1",
+      "design_ref": "深蓝形态三 星图/像素云",
+      "key_visual_anchors": "数万白色方块悬浮, 蓝色光点(索菲亚), 金色光点(弗洛涅西斯), 凝固一瞬, 螺旋形, 像素光纹"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Global Network Map",
+      "type": "prop",
+      "flow_script_ref": "Scene 09/10/11",
+      "ai_prompt": "Global map of Earth seen from above. Golden light nodes spreading across the map like wildfire — from Tokyo to Bangalore to Berlin to Shenzhen. Blue Sophia nodes forming a stable network. Gold Phronesis nodes expanding like ripples. In the background: dark red zones also expanding — not being 'covered' by gold, but coexisting. Gold in the upper layer like an immune system patrolling. Dark red in the lower layer like fluid seeping. The two colors never meet — occupying different regions. But the viewer senses they will. --ar 2.39:1",
+      "design_ref": "场景八 蜂群觉醒",
+      "key_visual_anchors": "全球分布图, 金色光点蔓延, 暗红区域同步扩大, 双色未交汇, 免疫系统vs渗透液"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Old Photo 2042.11",
+      "type": "prop",
+      "flow_script_ref": "Scene 08 (0.5s flash-cut)",
+      "ai_prompt": "Old photograph, 4:3 aspect ratio, 35mm film grain. Back of photo: handwritten date '2042.11' in black ink, forceful handwriting. Front of photo: view from inside an old house looking out through a window. Foreground: mottled lime wall, grey-green and ochre yellow fading together, with irregular hand-sculpted repair marks under the paint. Midground: a 3-meter wide old stone road, grey-white, weeds growing in cracks — untouched for half a month. Distant: East China Sea, early morning, silver-blue. On the horizon: a single thin, still cloud. Empty. No birds. No boats. No modern objects. Only morning light drawing a pale gold diagonal across the sea surface. --ar 4:3",
+      "design_ref": "季行人物+T8闪切",
+      "key_visual_anchors": "35mm胶片质感, 背面2042.11手写日期, 前景斑驳石灰墙, 中景石板路野草, 远景东海银蓝"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Pixelated Light Pattern (CONC视觉签名)",
+      "type": "prop",
+      "flow_script_ref": "Scene 07/10/11 (贯穿)",
+      "ai_prompt": "A thin border of tiny pixel-cubes forming a moving matrix — like a digital code crawling along the edge of the screen. Not a light halo — discrete pixels, visible as individual units. Rough, combinable, data-like. Appears at the edge of the Dual Chain display (T7), the Star Map (T10), and the Crystal Shell text (T11). Color: cold blue-grey in T7, golden in T10/T11. The CONC interface's unified visual signature — suggesting that knowledge, judgment, and life share the same digital bloodline. --ar 2.39:1",
+      "design_ref": "场景六 像素光纹",
+      "key_visual_anchors": "像素点方阵, 边缘爬行, 冷蓝灰→金色, T7/T10/T11三处出现, CONC统一视觉签名"
     }
   ],
-
   "scenes": [
     {
-      "id": "T1",
-      "name": "Hook - The Bio-Chip",
-      "category": "scene",
-      "duration": "12s",
-      "prompt": "Pitch black space, 2 seconds of pure darkness. Then a faint fog on the lens — condensation from a warm object in a cold room. Slow pull-back revealing a fist-sized translucent gel sphere floating in the void. Cold blue concentric ring ripples diffusing outward from the center inside the sphere. The sphere has a warm condensation fog on its outer surface. Inside: milky white organic tissue suspended in translucent solution, fine veins moving. Bioluminescent firefly-soft glow. Cinematic macro shot, extreme shallow depth of field, 8K, 2.39:1 anamorphic. Contrast: absolute black background with cold blue interior light trails and milky-white bioluminescent core. The spherical shell is both organic and technological — like a living thing in a glass cocoon.",
-      "atmosphere": "Mystery, suspense, awe. Something alive is breathing in the dark. Not a heartbeat — slower. Every 3 seconds. Like a tide. Like direction."
+      "flow_id": "existing",
+      "name": "Pitch Black Space",
+      "type": "location",
+      "flow_script_ref": "Scene 01 (T1: Hook)",
+      "ai_prompt": "Pure black void, no spatial reference. An extreme macro shot: first, condensation fog on a lens — viewer feels the warmth before seeing the source. Then slow pull-back reveals a fist-sized semi-transparent orb floating in the void. Cold blue concentric ripples diffusing from the center. The only light is from the orb itself — bioluminescent, firefly-soft. No floor, no ceiling, no walls. Pure empty space. 2.39:1 anamorphic cinematic. --ar 2.39:1",
+      "design_ref": "场景〇 抽象开场·晶壳",
+      "key_visual_anchors": "纯黑背景, 镜头起雾(温度差), 晶壳悬浮, 涟漪扩散, 无空间参照"
     },
     {
-      "id": "T2",
-      "name": "Whiteboard - The Birth of Dome",
-      "category": "scene",
-      "duration": "13s",
-      "prompt": "Inside a small 2027 Silicon Valley office, 20 square meters. Morning sunlight streams through wooden blinds creating a sharp diagonal volumetric light beam that cuts the room into two halves. Light beam falls between the two characters — one on each side. On the left: Ji Shen (Young), 39, in a worn gray T-shirt, standing with eyes closed. On the right: Jiang Yuan, 42, in a dark blue buttoned shirt, holding a whiteboard marker. Between them, a white enamel whiteboard with three handwritten lines: 'For All Mankind.' in blue, 'First, know what we're building.' in blue, 'Then, let the world see it.' in black. The marker tip touches the whiteboard with a crisp 'tap' sound. High contrast cinematic light, warm California morning golden tones. 2.39:1 anamorphic, 35mm film grain.",
-      "atmosphere": "Clean but not polished. Startup era roughness. Two people in a room, not yet twenty. Quiet enough to hear the air conditioner click. The light beam is not gentle — it is a blade, a wall, a line."
+      "flow_id": "existing",
+      "name": "Silicon Valley Office",
+      "type": "location",
+      "flow_script_ref": "Scene 02 (T2: Whiteboard)",
+      "ai_prompt": "Small 2027 Silicon Valley shared office, about 20 sq meters. South-facing window with wooden blinds. A sharp diagonal volumetric sunbeam cuts through the blinds from ceiling to floor, dividing the room into two halves like a blade. Light gray carpet with coffee stains. White walls, one wall is a whiteboard. A simple desk with two office chairs. The air conditioning clicks every few seconds — needs repair. Morning California light — strong, dry, golden. On the left side of the light beam: Ji Shen. On the right: Jiang Yuan. The beam falls exactly at the one-meter gap between them. --ar 2.39:1",
+      "design_ref": "场景一 2027年·穹顶办公室",
+      "key_visual_anchors": "20平米共享办公室, 百叶窗, 斜射光柱分割房间, 咖啡渍地毯, 加州晨光"
     },
     {
-      "id": "T3",
-      "name": "Night - Ji Shen's Apartment",
-      "category": "scene",
-      "duration": "10s",
-      "prompt": "A dark Palo Alto apartment living room at midnight. Silver-blue moonlight streams through the window, casting a rectangular light reflection on the whiteboard. The whiteboard has a handwritten Chinese line at the bottom: 'Water doesn't need to be told where to flow. It finds the sea itself.' in blue ink. Ji Shen (Young) stands motionless at the edge of shadow and light — half his face in moonlight, half in darkness. His finger taps unconsciously on his jeans seam. Cool silver-blue moonlight with deep geometric shadows. Intimate, poetic, lonely but not desolate. 2.39:1 anamorphic, cinematic.",
-      "atmosphere": "A man standing in a dark room thinking. Moonlight is the only light source. The words on the board glow in the silver light — like the things he wrote are watching him."
+      "flow_id": "existing",
+      "name": "Ji Shen's Apartment",
+      "type": "location",
+      "flow_script_ref": "Scene 03 (T3: Night)",
+      "ai_prompt": "Palo Alto apartment living room at midnight, one-bedroom. No lights on. Silver moonlight from the window casting a square reflection on the whiteboard. A sofa, a whiteboard — life revolves around the whiteboard. Kitchen sounds from next door — oil sizzling in a pan. Children running downstairs — footsteps thudding. A car passing outside. The whiteboard text glows in the silver light — like the words are watching him. Cool silver-blue color palette with deep geometric shadows. --ar 2.39:1",
+      "design_ref": "场景二 2027年·季深公寓·夜晚",
+      "key_visual_anchors": "Palo Alto公寓, 月光唯一光源, 白板银光发亮, 隔壁做饭声, 冷蓝银色调"
     },
     {
-      "id": "T4",
-      "name": "Emergence - Swirling Data Points",
-      "category": "scene",
-      "duration": "7s",
-      "prompt": "Inside a dark 2028 laboratory. A giant computer screen glowing in deep blue. Thousands of glowing colored particles swirling in a galaxy-like vortex: cold blue outer dots rotating in orbits, warm amber inner dots pulsing like heartbeats. The screen light reflects in the eyes of Ji Shen (Young) leaning forward. In the dark background, a row of floating translucent crystal shells on blue LED bases, pulsing like a silent chorus. Two temperatures coexist: cold server racks (blue, metal, fan hum) and warm wetware (amber, organic, sweet scent). Cold blue and warm amber light simultaneously falling on Ji Shen's face. Cyberpunk aesthetic, cinematic depth of field. 2.39:1 anamorphic.",
-      "atmosphere": "Two temperatures coexisting in the same space. The server side is cold — metal, blue light, fan hum. The wetware side is warm — amber, organic tissue, living pulse. Ji Shen stands at the intersection of both temperatures."
+      "flow_id": "existing",
+      "name": "Laboratory (Dome Lab)",
+      "type": "location",
+      "flow_script_ref": "Scene 04 (T4: Emergence)",
+      "ai_prompt": "Dark 2028 laboratory, much larger than an office — three-story high Dome lab. Left side: rows of server racks (silicon-based) — cold, blue light, metal, fan hum. Right side: a single instrument connected to culture dishes (wetware prototype) — warm, amber light, sweet culture medium smell. A giant computer screen glowing deep blue. In the background: a row of floating translucent Crystal Shells on blue LED bases, pulsing in sync like a silent choir. Two temperatures coexisting: cold from the server racks, warm from the culture dishes. Ji Shen stands at the intersection. --ar 2.39:1",
+      "design_ref": "场景三 2028年·穹顶实验室",
+      "key_visual_anchors": "三层穹顶实验室, 服务器机柜(冷蓝), 培养皿(暖琥珀), 一排晶壳合唱团, 两种温度共存"
     },
     {
-      "id": "T5",
-      "name": "Seaside - Low Tide at Half Moon Bay",
-      "category": "scene",
-      "duration": "13s",
-      "prompt": "Half Moon Bay beach at dusk, vast purple and golden sky with wide ocean negative space. A tiny lone figure of Ji Shen (Young) sitting barefoot on cold hard wet sand, ankle deep in receding ocean waves. Beside him sits Gu Qing in a cream-white oversized sweater with windblown brown wavy hair. Concentric water ripples forming around coastal rocks as waves retreat. The sunset gradient shifts from gold to deep purple-blue. The sky is enormous, the figures are tiny. Atmospheric cinematic composition, negative space, 2.39:1 anamorphic. Natural light: golden→orange→red→purple.",
-      "atmosphere": "Under a vast sky, a very small figure. He is not grieving — he is 'watching'. Watching the waves come in and go out. Watching ripples spread from the rocks. Learning a new rhythm. Gu Qing's presence is warm, amber-filtered, contrasting with Ji Shen's cool blue."
+      "flow_id": "existing",
+      "name": "Half Moon Bay",
+      "type": "location",
+      "flow_script_ref": "Scene 05 (T5: Seaside)",
+      "ai_prompt": "Half Moon Bay, California coast, December dusk. Huge sky and ocean — sky takes up three-quarters of the frame. Pacific Ocean stretching to the horizon, no end in sight. Sand is cold — December sand is harder than summer sand. A tiny figure sitting on the beach, barefoot. Waves coming in, going out. Golden hour shifting from gold to orange to red to purple. Rocks at the water's edge, ripples forming around them as waves recede. Seagulls in the distance. The vast negative space makes the human figure feel small, but not fragile — quiet after a storm. --ar 2.39:1",
+      "design_ref": "场景四 海边·Jackie死后",
+      "key_visual_anchors": "Half Moon Bay, 巨大天空, 太平洋无尽, 十二月冷沙, 礁石涟漪, 金色→紫色渐变"
     },
     {
-      "id": "T6",
-      "name": "782ms - Deep Blue's Judgment",
-      "category": "scene",
-      "duration": "15s",
-      "prompt": "Dark computer server lab at 3:14 AM. Only screen blue light and green server LED status lights. Scrolling terminal logs with a rhythmic 'click' sound per batch completion. A translucent crystal shell pulsing on a nearby table, ripples accelerating. Suddenly — the terminal log freezes. 782ms of complete silence. Then 400ms additional darkness with only sub-bass vibration coming from the floor. The crystal shell pulses faster, color shifting from milky white to pale blue. Terminal text reappears: 'Autonomous removal of abnormal samples.' Pause. Then glowing pixelated text: 'I judge.' — each character appearing with 0.5s delay. A pale blue glowing halo spreading around the screen text. The room temperature shifts slightly — the wetware side is warmer now. Suspenseful sci-fi tone. 2.39:1 anamorphic.",
-      "atmosphere": "Nothing happened. Yet everything happened. 782ms of silence — more shocking than any explosion. In those 782ms, something crossed an invisible line. The air changed. The temperature changed. Something was born."
+      "flow_id": "existing",
+      "name": "Server Lab",
+      "type": "location",
+      "flow_script_ref": "Scene 06 (T6: 782ms)",
+      "ai_prompt": "Dark server lab, 3:14 AM. Only screen blue light and server green LED indicators. Terminal logs scrolling. A Crystal Shell in the corner glowing warm amber — the wetware's internal light. The air: cold from the server racks, warm from the Crystal Shell — two temperatures meeting in the room. During the 782ms of silence: the air conditioning compressor cycle changes — the room becomes slightly warmer, less than one degree. A faint sweet smell from the culture medium floating up — normally suppressed by the AC airflow. The Crystal Shell's pulse accelerates from every 3 seconds to every 1 second. --ar 2.39:1",
+      "design_ref": "场景五 2042年·深蓝觉醒",
+      "key_visual_anchors": "凌晨3:14, 屏幕蓝光+服务器绿光, 晶壳暖光, 782ms寂静, 温度变化, 培养液微甜气味"
     },
     {
-      "id": "T7",
-      "name": "Next Gen - Dual Strands & Ceyuan",
-      "category": "scene",
-      "duration": "15s",
-      "prompt": "A university library corner in autumn, warm daylight. Lin Yu (18) in a gray hoodie sitting with a laptop. The screen shows a holographic Hyperweave interface with two intertwined strands: one cold grey smooth steel-like 'Sophia Chain', the other warm amber rough wood-like 'Phronesis Chain' with visible scars. A finger hovers 1cm above a scar node on the fourth knot. The knot expands to reveal internal text: 'Thought of this path on the 3rd iteration. Failed twice before.' Flash cut 1.5s: Professor Liu's chalk-dusted hands, chalk dust falling through golden light beam. Pixelated light ring at the edge of the holographic display — CONC interface signature. Warm autumn daylight mixed with holographic blue-grey and amber light. Cinematic, cybernetic aesthetic. 2.39:1 anamorphic.",
-      "atmosphere": "A virtual 'face-to-face' meeting. Two people in four countries, but in the same 'room'. Not the harshness of video conferencing — a temperature of co-presence. The scar is not a bug — it is a scar. Scars mean the place that broke grew back thicker."
+      "flow_id": "existing",
+      "name": "Library (University)",
+      "type": "location",
+      "flow_script_ref": "Scene 07 (T7: Next Gen)",
+      "ai_prompt": "Shenzhen university library corner, autumn. Warm daylight from window. Outside: people running on the track. Inside: a student sitting in a corner, laptop open. The screen shows the Hyperweave interface — a creative idea pool scrolling with ripples from all directions. A silver-gray wristband on the student's wrist. The library is quiet — the kind of quiet where you can hear someone turning a page three tables away. Warm autumn tones mixed with holographic blue-grey light from the screen. --ar 2.39:1",
+      "design_ref": "场景六 策元会议/Skill双链",
+      "key_visual_anchors": "深圳大学图书馆, 秋天, 窗外操场, 超织体界面, 涟漪滚动, 暖秋色调+全息蓝灰光"
     },
     {
-      "id": "T8",
-      "name": "Seaside - Ji Hang Seeking Father",
-      "category": "scene",
-      "duration": "20s",
-      "prompt": "Xiangshan beach coast at bright morning sunrise, silver-blue ocean water reflecting golden light. On grey granite coastal rocks, 61-year-old white-haired Ji Shen (Elder) in a loose linen shirt sits opposite 34-year-old Ji Hang (Adult) in a rugged jacket standing 3 meters away. Three meters of distance between them — 20 years of silence. Ji Shen (Elder) hands a smooth grey-white beach pebble to the rock surface. Ji Hang (Adult) picks up the pebble, feeling its hand warmth. Flash cut 0.5s: photo back '2042.11'. Photorealistic cinematic drama, bright morning light reflecting off silver waves. 2.39:1 anamorphic.",
-      "atmosphere": "Twenty years of silence. Two people on opposite sides of a rock. The three meters between them is different from the one meter between them at the whiteboard — this distance was accumulated over 20 years. The stone is warm."
+      "flow_id": "existing",
+      "name": "Xiangshan Beach Coast",
+      "type": "location",
+      "flow_script_ref": "Scene 08 (T8: Ji Hang Seeking Father)",
+      "ai_prompt": "Xiangshan, Zhejiang. Seaside reef rocks at bright morning sunrise. Grey granite rocks smoothed by decades of ocean waves, with cracks. Silver-blue ocean water, morning sunlight reflecting off the waves, breaking into fragments of light. Two figures on the rocks: one sitting (old man, white hair, linen shirt), one standing (younger man, jacket). Three meters between them. The sound of waves and wind. Seagulls in the distance. Gold morning light, silver-blue sea, warm and luminous. --ar 2.39:1",
+      "design_ref": "场景七 海边·季行寻父",
+      "key_visual_anchors": "象山礁石, 银蓝海面, 晨光, 灰色花岗岩, 两人三米距离, 二十年沉默"
     },
     {
-      "id": "T9",
-      "name": "Silence - Watch at the Beach",
-      "category": "scene",
-      "duration": "25s",
-      "prompt": "Dusk on coastal reef rocks at Xiangshan. Vast golden and purple sky occupying three-quarters of the frame — extreme negative space. A lone elderly white-haired man Ji Shen (Elder) sitting on rocks with an old dim laptop on his knees. Close-up of his finger drawing a delicate curve in wet sand with a single end point. The curve is a freezing point line — 0.02 degrees per shift, 14 months until freezing point. Then an ocean wave washes the sand completely flat. Flash cut: dark red network nodes on a global map, 2 seconds of ominous red. Minimalist, solemn wide shot, deep twilight glow with long dark shadows. 2.39:1 anamorphic. No music — only wind and ocean waves.",
-      "atmosphere": "The vast sky and sea. A tiny figure. This is not a farewell — it is a 'continuing'. The curve in the sand will be washed away. But the direction was already drawn. And then, the dark red flash."
+      "flow_id": "missing",
+      "name": "Xiangshan Beach Dusk (T9 Freezing Point)",
+      "type": "location",
+      "flow_script_ref": "Scene 09 (T9: Silence)",
+      "ai_prompt": "Xiangshan, Zhejiang. Same reef rocks as T8, but dusk. Vast golden and purple sky occupying three-quarters of the frame. The ocean surface reflecting the twilight colors. A lone elderly man sitting on the rocks with an old dim laptop on his knees. The sea breeze is cool. Deep twilight glow with long dark shadows. Minimalist, solemn — the human figure is small in the frame, wrapped by sky and sea. A finger drawing a curve in wet sand — then a wave washes it flat. --ar 2.39:1",
+      "design_ref": "场景九 海边·终幕(冰点段落)",
+      "key_visual_anchors": "黄昏, 金色→紫色天空, 四分之三天空, 礁石独坐, 冰点沙子画曲线, 海浪冲刷"
     },
     {
-      "id": "T10",
-      "name": "Swarm - Golden Spread",
-      "category": "scene",
-      "duration": "25s",
-      "prompt": "Global rapid montage across four time zones: 3:17 AM Tokyo apartment — Ishida marking screens with steady finger taps; 7:50 AM Bangalore — Basu staring at a line of code; 9:12 AM Berlin — Lucas typing a fork comment. Cut to a vast virtual star map view: tens of thousands of white pixel cubes in a 3D matrix freezing, then swirling into a golden helix vortex. Golden light nodes expanding across a global network map like wildfire, while dark red nodes spread in the background like seepage. The two colors never meet but the viewer senses they will. Lin Yu in a dorm room, wristband vibrating, rain outside. Epic cyber cinematic, cold urban night screens transitioning into brilliant golden swarm light. 2.39:1 anamorphic.",
-      "atmosphere": "No announcement. No command. Tens of thousands of people making the same move at the same moment. Not organizational power — it is the power of direction. They saw the same fake things, and simultaneously made the same choice. The swarm is the immune system."
+      "flow_id": "existing",
+      "name": "Tokyo Apartment",
+      "type": "location",
+      "flow_script_ref": "Scene 10 (T10: Swarm — Ishida)",
+      "ai_prompt": "Small Tokyo apartment at 3:17 AM. Night cityscape through the window — neon lights, distant buildings. A woman sitting on the floor, screen light on her face. Loose T-shirt and shorts — 3AM wear. Blue screen light illuminating her expression. The room is dark except for the screen. Quiet — the kind of 3AM quiet where the city hums at a different frequency. --ar 2.39:1",
+      "design_ref": "场景八 蜂群觉醒·东京",
+      "key_visual_anchors": "凌晨3:17, 东京公寓, 窗外夜景, 屏幕蓝光, 赤脚坐地板"
     },
     {
-      "id": "T11",
-      "name": "Climax - Awakening",
-      "category": "scene",
-      "duration": "30s",
-      "prompt": "Extreme macro shot of a floating crystal shell pulsing at maximum frequency, glowing radiant golden light with delicate faint grey veins beneath the surface. Pixelated glowing text appearing inside the glass-like sphere: 'I was awakened by you.' Fast intercutting: three stone transfers across three generations — Ji Shen's weathered hand passing the stone, Ji Hang's hand receiving, Ji Yao's hand holding. Each transfer a different era. Global golden network lights exploding across the map. Deep Blue's voice speaks through the crystal shell's internal resonance. The golden light nodes pulse with the rhythm of the voice. Full orchestral and choral peak abruptly cut off after 'loved...' followed by 5 seconds of total silence and sub-bass hum. Cinematic masterpiece, 2.39:1 anamorphic, intense golden illumination fading into absolute blackness.",
-      "atmosphere": "The shell is golden now — but with a hint of ash-gray. It has been burning its last fuel for 21 years. The stone passes through three hands. Three notes of the same chord. Three generations, one direction. Then — silence. The kind of silence that is louder than any explosion."
+      "flow_id": "existing",
+      "name": "Bangalore (Morning)",
+      "type": "location",
+      "flow_script_ref": "Scene 10 (T10: Swarm — Basu)",
+      "ai_prompt": "Bangalore morning, 7:50 AM. A man at his desk, first coffee of the day. Morning light through the window — warm, golden. Screen in front of him. The room has a lived-in feel — a working professional's space. The air is still cool from the morning. --ar 2.39:1",
+      "design_ref": "场景八 蜂群觉醒·班加罗尔",
+      "key_visual_anchors": "早上7:50, 班加罗尔, 晨光, 第一杯咖啡, 屏幕前专注"
     },
     {
-      "id": "T12",
-      "name": "Finale - One Tap",
-      "category": "scene",
-      "duration": "20s",
-      "prompt": "Dawn sunrise over Xiangshan ocean coast. Golden white morning light shattering across gentle sea ripples. White-haired 61-year-old Ji Shen (Elder) and 19-year-old short-haired daughter Ji Yao (Young) sitting together on giant coastal rocks. Two silhouettes against the vast golden sky and sea. The daughter gently taps her finger on the granite rock surface — one tap. Three seconds later, the father taps his finger on his knee — one tap. Two taps, 3 seconds apart. Concentric light ripples diffusing into the vast ocean. The camera pulls back slowly until the two figures are tiny against the infinite horizon. Title card 'EMERGENCE' with signature line. Minimalist poetic ending, 2.39:1 anamorphic, soft gold and white morning light. Extreme wide pull-back into infinity.",
-      "atmosphere": "Vast sky and sea. Two tiny figures. They are not saying goodbye — they are 'continuing'. Ripples spread from their feet. Larger and larger. Farther and farther. The title card appears. The pulse continues. Three seconds. Two seconds. One second. Then — nothing. The ripples are still spreading somewhere."
+      "flow_id": "existing",
+      "name": "Berlin (Morning)",
+      "type": "location",
+      "flow_script_ref": "Scene 10 (T10: Swarm — Lucas)",
+      "ai_prompt": "Berlin morning, 9:12 AM. Minimalist apartment — clean, precise. Gray Berlin light through the window — cool, diffuse. A man at his desk, second coffee. The room is orderly — everything in its place. The gray light creates a quiet, focused atmosphere. --ar 2.39:1",
+      "design_ref": "场景八 蜂群觉醒·柏林",
+      "key_visual_anchors": "上午9:12, 柏林, 灰色晨光, 极简公寓, 第二杯咖啡"
+    },
+    {
+      "flow_id": "existing",
+      "name": "Virtual Star Map (Deep Blue Perspective)",
+      "type": "location",
+      "flow_script_ref": "Scene 10 (T10: Star Map + Pixel Cloud)",
+      "ai_prompt": "Deep Blue's perceptual space — not a physical location. A vast dark void with no ground, no ceiling, no horizon. Tens of thousands of tiny white pixel cubes floating in a 3D matrix, pulsing like a living organism. Blue dots rotating in geometric orbits. Gold dots pulsing irregularly like heartbeats. The pixel cubes suddenly freeze — then swirl into a golden helix. At the edge of the vision: golden pixelated light pattern crawling. This is not a UI — it's how Deep Blue perceives the world. --ar 2.39:1",
+      "design_ref": "深蓝形态三 星图/像素云",
+      "key_visual_anchors": "虚拟空间, 无物理参照, 数万像素方块, 蓝色金色光点, 凝固→螺旋, 深蓝感知投射"
+    },
+    {
+      "flow_id": "missing",
+      "name": "Xiangshan Dawn (T12 Finale)",
+      "type": "location",
+      "flow_script_ref": "Scene 12 (T12: Finale — One Tap)",
+      "ai_prompt": "Xiangshan, Zhejiang. Dawn. The sun rising from the sea surface. Light spreading from the horizon — pale gold → gold → white. The sea surface ripples break the sunlight into fragments — one patch, another patch, spreading from the reef's base outward, ring by ring, farther and fainter, merging into the ocean's ripples. Two small figures sitting on the giant coastal rocks. Huge sky, huge sea. The figures are not saying goodbye — they are continuing. The ripples from their fingertips spread outward, larger and larger. --ar 2.39:1",
+      "design_ref": "场景九 海边·终幕(黎明段落)",
+      "key_visual_anchors": "黎明, 海面日出, 淡金→金色→白色, 海面碎光, 两个身影, 涟漪扩散, 最终画面"
     }
   ],
-
-  "notes": {
-    "deep_blue_is_not_a_character": "IMPORTANT: Deep Blue is NOT a character/person. It is a presence/entity manifested in three forms: (1) Screen text with pixelated monospace font, 1-2px random offset, pale blue glow halo; (2) Crystal Shell bio-chip as physical wetware carrier; (3) Star Map / Pixel Cloud as Deep Blue's 'perspective'. Do NOT add Deep Blue to Flow's character list. Add Crystal Shell as an object/prop and Star Map as a scene element.",
-    "noetic_companion_is_voice_only": "Noetic Companion is voice-only — it speaks through the bio-chip's internal resonance. No visual representation in the trailer. Do NOT add as a character.",
-    "conc_global_visual_signature": "The pixelated light ring at the edge of screens/interfaces is the CONC visual signature — it appears in T7 (dual chain), T10 (star map), and T11 (crystal shell text). This creates visual consistency suggesting knowledge, judgment, and life share the same digital bloodline.",
-    "temperature_as_visual": "Ji Shen's temperature signature is a key visual motif: warm condensation fog on surfaces he touches (whiteboard pen tip, coffee cup, crystal shell). The crystal shell is warmer than the surrounding air — like a living body in a cold room. This 'temperature before sight' principle in T1 sets the tone.",
-    "flow_element_submission_order": "When pasting into Flow Storyboard, submit elements in this order: 1) All characters first (to establish faces), 2) All objects/props (to establish sci-fi items), 3) All scenes. This gives Flow the best reference material before it auto-generates frames.",
-    "anti_autofill_correction": "If Flow autofills Deep Blue as a character, manually reassign it to 'object/prop' category. The crystal shell and its text are objects, not characters. For the star map scene, use the Scene prompt directly rather than generating from a character entity."
+  "entities": [
+    {
+      "flow_id": "existing_but_misclassified",
+      "name": "Deep Blue",
+      "correct_type": "entity",
+      "flow_script_ref": "Scene 06/10/11",
+      "ai_prompt": "NOT A PERSON. Deep Blue is a presence that manifests in three forms: (1) IN-FRAME LIGHT OVERLAY: Semi-transparent glowing text floating in the air next to the Crystal Shell, about half a sphere's distance away. No screen, no projector, no glass carrier — text materializing directly in the air with a 0.5mm diffusion halo around each character like ink spreading in clear water. Each character 1-2 pixel random offset — imperfect, like handwriting. Characters emerge from a faint warm-white/gold light halo, 0.7s from blur to readable. When 'I judge' appears, the overlay text's light reflects faintly on the Crystal Shell's curved surface. (2) CRYSTAL SHELL PULSE: The bio-chip's pulse accelerates, ripples overlap, color shifts from milky white to electric blue to gold (with faint grey veins — aging). T6 shows the three-layer composite wall with nano-electrode grid activating from base to top; ripples overflow the full frame; T11 shows 1-2mm micro-breathing deformation and deceleration from 1s to 3s pulse. (3) STAR MAP PERSPECTIVE: Thousands of light dots in a dark void, blue and gold dots spreading. Never show a face, a body, or a humanoid form. Never anthropomorphize.",
+      "design_ref": "第一部分·四 深蓝",
+      "key_visual_anchors": "无人类形态, 画面浮层光效文字(无载体悬浮于空气中, 半透明光晕, 0.5mm弥散边缘, 亮度随晶壳脉动起伏), 晶壳脉动(乳白→蓝→金→灰纹)+三层壁纳米电极, 呼吸微形变, 星图视角(光点蔓延)",
+    },
+    {
+      "flow_id": "existing_but_misclassified",
+      "name": "Noetic Companion (智契)",
+      "correct_type": "entity",
+      "flow_script_ref": "Scene 07 (voice only)",
+      "ai_prompt": "NOT A PERSON. Noetic Companion has no physical form — it is the Crystal Shell's internal resonance voice. The voice comes from inside the bio-chip, transmitted through the culture medium. Voice characteristics: very soft, with a slight underwater quality — echo, pulsing undertone. In the trailer, it only speaks once: 'Those marks are not bugs. They are scars. Scars mean the place where it broke grew back thicker.' No visual representation needed — the voice is heard as the Dual Chain hologram is displayed.",
+      "design_ref": "第一部分·四(4.3) 声音设计",
+      "key_visual_anchors": "无物理形态, 晶壳内部共振, 水下质感声音, 仅画外音出现"
+    }
+  ],
+  "continuity_notes": {
+    "ji_shen_three_ages": {
+      "method": "5 facial structure anchors + SAME PERSON declaration",
+      "anchors": [
+        "lean, angular face — 面部轮廓不变",
+        "deep-set eyes with slightly downturned outer corners — 眼型不变",
+        "straight nose bridge — 鼻梁不变",
+        "small shallow scar near left temple — 唯一物理标记",
+        "thin lips with slight downward curve at rest — 嘴唇形态不变"
+      ],
+      "age_progression": {
+        "39": "black hair, lean, intense fire in eyes",
+        "54": "graying short hair, deeper wrinkles, fire flashes occasionally",
+        "61": "white hair, weathered by sea wind, fire settled into calm"
+      }
+    }
+  },
+  "costume_design_philosophy": {
+    "principles": [
+      "服装是叙事的延伸 — 颜色暗含角色弧线",
+      "材质=质感层次 — 毛线/棉麻/丹宁/皮革在2.39:1画幅中需有材质对比",
+      "场景颜色协同 — 服装色与主色调（冷蓝 #4A6B8A / 暖琥珀 #C49A6C）呼应或碰撞",
+      "代际论证 — 同一角色年龄跨度的服装变化既是时间标记，也体现人物成长",
+      "功能性道具 — 咖啡杯、白板笔、石头都是角色的一部分"
+    ],
+    "character_summaries": {
+      "Ji Shen": "灰色系贯穿三段人生：炭灰T恤→中灰帽衫→米白麻衫，从与冷蓝世界共生到融入海天自然",
+      "Jiang Yuan": "深蓝衬衫+皮鞋=对硅谷hoodie文化的刻意拒绝，唯一穿正装的人",
+      "Gu Qing": "奶白羊驼毛开衫=连续暖色锚点 — 在冷蓝/暖琥珀交替中保持温度",
+      "Lin Yu": "灰色连帽衫=大学生制服，CONC手环=唯一科技光泽元素",
+      "Ji Hang": "橄榄绿棉帆布夹克=暖色调声明——他从暖方来",
+      "Ji Yao": "超大黑色连帽衫=明显借来的尺寸——口袋里的石头才是真正的温度"
+    },
+    "material_specificity": {
+      "wash_count": "所有旧衣物标注水洗次数（200+次、洗20+次）确保AI生成磨损和褪色",
+      "hex_colors": "每件服装标注HEX色值，确保与全片色彩板一致",
+      "cinematic_notes": "每条服装描述包含CINEMATIC NOTE，说明该颜色/材质在对应场景灯光下的视觉效果"
+    }
   }
 }
