@@ -133,7 +133,7 @@ def main():
                 if b in SUBSTRING_FALSE and not re.search(re.escape(b) + BRAND_PRODUCT, l): continue
                 if n in KEEP_PERIOD_CH and b in ('健力宝','五菱宏光'): continue   # 时代实物，03 方案 §二
                 brand.append(f'{n}:{i} {b}')
-    add('真实消费品牌 008—199', not brand, f'{brand}')
+    add('真实消费品牌 008—199（2026-09-20 裁定：清洗暂停，此项仅提示）', not brand, f'{brand}', warn=True)
 
     seq = [(n, bk.anchor(n)) for n in sorted(bk.ch, key=int)]
     seq = [x for x in seq if x[1]]
@@ -216,6 +216,20 @@ def main():
             for p, why in forb.items():
                 if re.search(p, l): v.append(f'{n}:{i} [{why}]')
     add('纯硅基 v1.0 禁则', not v, f'{v}')
+
+    # 制度归属轴（2026-09-20 作者裁定；判据＝谁在主持、程序归属哪国制度。台账 §廿九）
+    CN_MARK = ('深圳', '深大', '华强北', '南山', '罗湖', '北京', '象山', '东海之滨', '西南山区', '潮汕')
+    FOREIGN_PROC = {'陪审团': '美英制度，中国为合议庭', '大陪审团': '仅美国', '终审判决': '法院专属，公安／调查组不得签发',
+                    '弹劾': '美英制度', '宣誓作证': '美国程序', '禁制令': '美英制度', '人身保护令': '美英制度'}
+    inst = []
+    for n in sorted(bk.ch, key=int):
+        if int(n) < 8: continue                                   # 001—006 按裁定不处理
+        body = '\n'.join(bk.lines(n))
+        if not any(w in body for w in CN_MARK): continue
+        for i, l in enumerate(bk.lines(n), 1):
+            for t, why in FOREIGN_PROC.items():
+                if t in l: inst.append(f'{n}:{i} {t}〔{why}〕')
+    add('制度归属：中国境内章出现仅对美英成立的程序词（台账 §廿九）', not inst, f'{inst}', warn=True)
 
     meta = []
     for n in bk.ch:
