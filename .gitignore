@@ -20,3 +20,15 @@ venv/
 
 # Large files (keep as reference but don't version)
 *.docx
+
+# 工具态目录与本机会话缓存（2026-09-20 批 20 加入，防状态输出被 6MB 中间产物淹没）
+.workbuddy/
+.playwright-cli/
+
+# 润色流水线中间产物：Gemini 原始对话切块与抽取脚本（6.3 MB，可再生，不入版本）
+06_小说/润色工程/gemini_raw/
+
+# 一次性自检输出
+06_小说/_chapter_stats.txt
+06_小说/_mkdir_check.txt
+06_小说/_tail_check.txt
