@@ -231,6 +231,18 @@ def main():
                 if t in l: inst.append(f'{n}:{i} {t}〔{why}〕')
     add('制度归属：中国境内章出现仅对美英成立的程序词（台账 §廿九）', not inst, f'{inst}', warn=True)
 
+    # 替换残渣（批 20 反查新增）：汉字之间夹半角空格＝品牌/修饰词替换后留下的叠修饰或断句残骸
+    space = []
+    SKIP_LATIN = re.compile(r'UI|AI|PPT|OKR|PCP|L\d|D_|I_sol|GHz|Skill|PDF|Diff|Markdown|B1|v\d')
+    for n_ in sorted(bk.ch, key=int):
+        if int(n_) < 8: continue
+        for i, l in enumerate(bk.lines(n_), 1):
+            for m in re.finditer(r'[一-鿿] [一-鿿]', l):
+                seg = l[max(0, m.start()-14):m.end()+14]
+                if SKIP_LATIN.search(seg): continue
+                space.append(f'{n_}:{i} …{seg.strip()}…')
+    add('汉字间半角空格（替换残渣／引号缺失）', not space, f'{space}', warn=True)
+
     meta = []
     for n in bk.ch:
         if int(n) < 8: continue
