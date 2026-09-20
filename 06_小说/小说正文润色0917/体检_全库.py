@@ -50,12 +50,13 @@ def anchor_time(line):
     m = re.match(r'^二[〇○零一二三四五六七八九]+年', line.strip())
     if not m: return None
     y = int(''.join(str(D[c]) for c in m.group(0) if c in D))
-    mo = re.search(r'·\s*(春|夏|秋|冬|正|腊|[一二三四五六七八九十]+月(?:上|中|下)?旬?)', line)
+    mo = re.search(r'·\s*(?:([正腊]|[一二三四五六七八九十]+)月(初|上旬|中旬|下旬|上|中|下|末|底)?|(春|夏|秋|冬))', line)
     if not mo: return y + 0.5/12.0                       # 只标到年 → 取年中
-    s = mo.group(1)
-    if s in SEASON: return y + (SEASON[s] - 6.0)/12.0
-    mon = zh_num(s[:2] if s.endswith('月') else s[0]) or 6
-    frac = {'上':0.1,'中':0.5,'下':0.9}.get(s[-1], 0.5)
+    if mo.group(3): return y + (SEASON[mo.group(3)] - 6.0)/12.0
+    mon = zh_num(mo.group(1)) or 6
+    # 2026-09-20 批 20 修口径 bug：旧写法取 s[-1] 判旬，而「上旬」的末字是「旬」，
+    # 于是 zh_num(s[:2]) 把**任何 N月上旬/中旬/下旬**一律算成十月——凭空造倒挂也盖住真倒挂。
+    frac = {'初':0.1,'上':0.1,'上旬':0.1,'中':0.5,'中旬':0.5,'下':0.9,'下旬':0.9,'末':0.9,'底':0.9,'':0.5}[mo.group(2) or '']
     return y + (mon + frac - 6.0)/12.0
 
 class Book:
