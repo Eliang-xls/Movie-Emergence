@@ -5,8 +5,8 @@ import re, sys, pathlib
 root = pathlib.Path("06_小说/小说正文润色0917")
 chapters = sorted(root.glob("[0-9][0-9][0-9]_*.md"))
 nums = [c.name[:3] for c in chapters]
-assert len(chapters) == 199, f"章数 {len(chapters)} != 199"
-assert nums == [f"{i:03d}" for i in range(1, 200)], f"编号不连号: {nums[:5]}..."
+assert len(chapters) == 211, f"章数 {len(chapters)} != 211"
+assert nums == [f"{i:03d}" for i in range(1, 212)], f"编号不连号: {nums[:5]}..."
 
 blocks = []
 for c in chapters:

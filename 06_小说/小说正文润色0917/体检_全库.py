@@ -84,7 +84,7 @@ def main():
 
     nums = sorted(int(k) for k in bk.ch)
     gaps = [i for i in range(nums[0], nums[-1]+1) if i not in nums]
-    add('章数与连号', len(nums) == 199 and not gaps, f'{len(nums)} 章，缺号 {gaps}')
+    add('章数与连号', len(nums) == 211 and not gaps, f'{len(nums)} 章，缺号 {gaps}')
 
     noanchor = [n for n in sorted(bk.ch) if bk.anchor(n) is None]
     add('时间锚点完备', set(noanchor) <= {'003','114'}, f'零锚点 {noanchor}（003 未润色区、114 刻意，既知例外）')
@@ -171,13 +171,16 @@ def main():
     near, seen = [], set()
     for g, idxs in by.items():
         if len(idxs) < 2: continue
-        a, b = sorted(idxs)
-        if spans[a][0] == spans[b][0] or (a, b) in seen: continue
-        seen.add((a, b))
-        r = difflib.SequenceMatcher(None, spans[a][2], spans[b][2]).ratio()
-        if 0.55 <= r < 0.999:
-            near.append((round(r, 3), f'{spans[a][0]}:{spans[a][1]}', f'{spans[b][0]}:{spans[b][1]}',
-                         spans[a][3][:22], spans[b][3][:22]))
+        lst = sorted(idxs)
+        for ii in range(len(lst)):
+            for jj in range(ii + 1, len(lst)):
+                a, b = lst[ii], lst[jj]
+                if spans[a][0] == spans[b][0] or (a, b) in seen: continue
+                seen.add((a, b))
+                r = difflib.SequenceMatcher(None, spans[a][2], spans[b][2]).ratio()
+                if 0.55 <= r < 0.999:
+                    near.append((round(r, 3), f'{spans[a][0]}:{spans[a][1]}', f'{spans[b][0]}:{spans[b][1]}',
+                                 spans[a][3][:22], spans[b][3][:22]))
     add('近重复引文（判刻意/缺陷；观察员三档、水的 maxim 已判刻意）', True, f'{near}', warn=True)
 
     susp = []
@@ -257,7 +260,7 @@ def main():
     add('元引用（叙述层提到书自身）', not meta, f'{meta}')
 
     arity = []
-    for f in glob.glob(os.path.join(bk.root, '*.md')) + glob.glob(os.path.join(bk.root, '..', '0*.md')):
+    for f in glob.glob(os.path.join(bk.root, '*.md')) + glob.glob(os.path.join(bk.root, '过程归档', '*.md')) + glob.glob(os.path.join(bk.root, '..', '0*.md')):
         hdr = None
         for i, l in enumerate(io.open(f, encoding='utf-8').read().split('\n'), 1):
             s = l.strip().replace('\\|', '')
@@ -268,7 +271,8 @@ def main():
             if c != hdr: arity.append(f'{os.path.basename(f)}:{i} {c}≠{hdr}')
     add('Markdown 表格列数一致', not arity, f'{arity[:6]}')
 
-    docs = glob.glob(os.path.join(bk.root, '_*.md')) + glob.glob(os.path.join(bk.root, '卷首*.md'))
+    docs = glob.glob(os.path.join(bk.root, '_*.md')) + glob.glob(os.path.join(bk.root, '卷首*.md')) \
+        + glob.glob(os.path.join(bk.root, '过程归档', '_*.md'))
     tot, badq = 0, []
     for doc in docs:
         t = io.open(doc, encoding='utf-8').read()
