@@ -76,7 +76,8 @@ class Book:
 
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
-    root = here if glob.glob(os.path.join(here, '1??_*.md')) else os.path.join(here, '小说正文润色0917')
+    # 批24归档后本脚本位于 正文润色0917/过程归档/，章节目录为其父级
+    root = here if glob.glob(os.path.join(here, '1??_*.md')) else (os.path.dirname(here) if glob.glob(os.path.join(os.path.dirname(here), '1??_*.md')) else os.path.join(here, '小说正文润色0917'))
     bk = Book(root)
     R = []
     def add(name, ok, detail, warn=False):
