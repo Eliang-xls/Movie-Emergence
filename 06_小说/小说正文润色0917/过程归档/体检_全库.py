@@ -85,10 +85,10 @@ def main():
 
     nums = sorted(int(k) for k in bk.ch)
     gaps = [i for i in range(nums[0], nums[-1]+1) if i not in nums]
-    add('章数与连号', len(nums) == 211 and not gaps, f'{len(nums)} 章，缺号 {gaps}')
+    add('章数与连号', len(nums) == 220 and not gaps, f'{len(nums)} 章，缺号 {gaps}')
 
     noanchor = [n for n in sorted(bk.ch) if bk.anchor(n) is None]
-    add('时间锚点完备', set(noanchor) <= {'003','114'}, f'零锚点 {noanchor}（003 未润色区、114 刻意，既知例外）')
+    add('时间锚点完备', set(noanchor) <= {'003','116'}, f'零锚点 {noanchor}（003 未润色区、116 刻意，既知例外）')
 
     ctrl = [n for n in bk.ch if any(c in '\n'.join(bk.lines(n)) for c in '\t\x08\x0c\ufffd')]
     add('控制字符与替换符', not ctrl, f'{ctrl}')
