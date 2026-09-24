@@ -1,12 +1,12 @@
-# 从 06_小说/小说正文润色0917/ 的 215 章重建根目录 涌现.md
+# 从 06_小说/小说正文润色0917/ 的 220 章重建根目录 涌现.md
 # 惯例（对现行文件实测）：每章 = "# " + 章文件首行标题 + 空行 + 正文（去章尾空白），章间空一行，LF 行尾，无卷首。
 import re, sys, pathlib
 
 root = pathlib.Path("06_小说/小说正文润色0917")
 chapters = sorted(root.glob("[0-9][0-9][0-9]_*.md"))
 nums = [c.name[:3] for c in chapters]
-assert len(chapters) == 215, f"章数 {len(chapters)} != 215"
-assert nums == [f"{i:03d}" for i in range(1, 216)], f"编号不连号: {nums[:5]}..."
+assert len(chapters) == 220, f"章数 {len(chapters)} != 220"
+assert nums == [f"{i:03d}" for i in range(1, 221)], f"编号不连号: {nums[:5]}..."
 
 blocks = []
 for c in chapters:
