@@ -4,7 +4,7 @@ import pathlib, re, collections
 
 root = pathlib.Path(r"D:\Docker\Movie-Emergence\06_小说\小说正文润色0917")
 chapters = sorted(root.glob("[0-9][0-9][0-9]_*.md"))
-assert len(chapters) == 221, f"章数 {len(chapters)} != 221"
+assert len(chapters) == 223, f"章数 {len(chapters)} != 223"
 
 D = {"〇": 0, "○": 0, "零": 0, "一": 1, "二": 2, "三": 3, "四": 4, "五": 5, "六": 6, "七": 7, "八": 8, "九": 9}
 YEAR_RE = re.compile(r"二[〇○零]([〇○零一二三四五六七八九]{2})年")

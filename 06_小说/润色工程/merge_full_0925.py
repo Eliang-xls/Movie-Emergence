@@ -14,7 +14,7 @@ if preface.exists():
     parts.append(preface.read_text(encoding="utf-8").rstrip() + "\n")
 
 chapters = sorted(ROOT.glob("[0-9][0-9][0-9]_*.md"))
-assert len(chapters) == 221, f"got {len(chapters)}"
+assert len(chapters) == 223, f"got {len(chapters)}"
 
 for p in chapters:
     t = p.read_text(encoding="utf-8").replace("\r\n", "\n").rstrip()
